@@ -50,14 +50,12 @@ Relevant Courses: Applied Fundamentals of Deep Learning, Software Design and Com
 % TECHNICAL SKILLS
 %------------------------------------------
 % @ChatGPT: when you are modifying this section, you may want to remove some of the skills that are less relevant to the job you are applying for.
-% For example, if you are applying for a software engineering role, you may want to remove the hardware skills.
 \section*{\textbf{TECHNICAL SKILLS}}
 \begin{itemize}[leftmargin=0.2in]
     \item \textbf{Programming:} Python, C/C++, JavaScript/TypeScript, Java, Verilog, Assembly
     \item \textbf{Frameworks:} PyTorch, React, FastAPI
-    % LTSpice, quartus, modelsim
     \item \textbf{Tools:} Linux, SQL/NoSQL, Nginx, Docker, Git, SSH
-    \item \textbf{Hardware:} Arduino, Raspberry Pi, FPGA
+    \item \textbf{Hardware:} Arduino, Raspberry Pi, FPGA, LTSpice, Quartus, ModelSim
     \item \textbf{Data and Visualization:} NumPy, Pandas, Matplotlib
 \end{itemize}
 
@@ -68,34 +66,32 @@ Relevant Courses: Applied Fundamentals of Deep Learning, Software Design and Com
 %------------------------------------------
 \section*{\textbf{EXPERIENCE}}
 % add links
-% figma, MS project
 
 \noindent\textbf{Frontend Manager, Voluntrack.org (Non-Profit)} \hfill May 2024 - Present
 \begin{itemize}[leftmargin=0.2in]
     \item Coordinated a 4-person frontend team using React.js to renew the web interface.
     \item Conducted biweekly stand-ups, assigned tasks in GitHub Projects, and streamlined communication in the team.
     \item Improved user engagement by approximately 20\% through enhanced app layouts and intuitive user flows.
+    \item Utilized Figma for UI design and MS Project to keep track of tasks and deadlines.
 \end{itemize}
 
 \vspace{0.3cm}
-\noindent\textbf{Project Lead, Handwritten Text Recognition (UofT)} \hfill Jun 2024 - Aug 2024
+\noindent\textbf{Project Lead, Handwritten Text Recognition (University of Toronto)} \hfill Jun 2024 - Aug 2024
 \begin{itemize}[leftmargin=0.2in]
-    % remove the 4 member team
-    \item Led a 4-member team to develop a PyTorch-based CRNN model for handwritten text recognition.
-    \item Deployed connected-pixel algorithms for image segmentation, processing 1024$\times$1024 images in $<4$ seconds.
-    % remove the 90%
-    % expand
-    \item Achieved 87\% word-level and 95\% character-level accuracy, reducing manual transcription time by 90\%.
+    \item Led a remote team to develop a PyTorch-based CRNN model for handwritten text recognition.
+    \item Achieved 87\% word-level and 95\% character-level accuracy on the test set with 10,000+ samples.
+    \item Deployed connected-pixel algorithms for word positioning and word segmentation, processing 1024$\times$1024 images in less than 4 seconds.
 \end{itemize}
 
 \vspace{0.3cm}
-\noindent\textbf{Project Manager, Wellness Room Expansion (UofT)} \hfill Jan 2024 - Apr 2024
+\noindent\textbf{Project Manager, Wellness Room Expansion (University of Toronto)} \hfill Jan 2024 -- Apr 2024
 \begin{itemize}[leftmargin=0.2in]
-    % be stronger, remove 82, remove oversaw, change it to smt other e.g. collaborated
-    % more detail of wellness room, 
-    \item Oversaw a 6-student team to improve a university wellness room; final presentation scored 82/100.
-    \item Managed tasks and dependencies using Gantt charts, completing 100+ items on schedule.
-    \item Leveraged 3D modeling in Blender to visualize proposals, simplifying client feedback and approvals.
+    \item Led a cross-functional team of 6 students to redesign and prototype a wellness room, endorsed by the client.
+    % @ChatGPT: if needed, replace Microsoft Project with Gantt Chart
+    \item Streamlined task management using Microsoft Project, tracking over 100+ tasks to completion on schedule.
+    \item Incorporating client feedback, generated 100+ initial ideas and finalized 3 proposed designs.
+    \item Designed and visualized proposals using Rhino and Blender 3D models, reducing client feedback iterations and improving decision-making efficiency.
+    \item Conducted research on noise isolation, light intensity, and light temperature to deliver optimal design solutions.
 \end{itemize}
 
 \noindent\rule{\linewidth}{1pt}
@@ -106,21 +102,22 @@ Relevant Courses: Applied Fundamentals of Deep Learning, Software Design and Com
 \section*{\textbf{PROJECTS}}
 
 \noindent\href{https://github.com/Ken-2511/Diary-with-ChatGPT-Comment}{\uline{
-\textbf{Diary with AI Feedback}}} \hfill Sep 2023 -- Present
+\textbf{Diary with AI Feedback}}} \hfill Sep 2023 -- On Going
 \begin{itemize}[leftmargin=0.2in]
     \item Designed and implemented a journaling program integrated with OpenAI’s GPT API, generating insightful feedback and suggestions for over 570 diary entries.
-    \item Developed a diary sorting algorithm to retrieve contextually similar past entries, enhancing user experience and maintaining API costs below \$0.2 per call.
+    \item Developed a diary sorting algorithm to retrieve contextually similar past entries, enhancing user experience and maintaining API costs below 0.2\$ per call.
     \item Optimized data-sorting pipelines and API request processes, reducing average diary load time from 10s to 0.5s, enabling seamless daily use.
 \end{itemize}
 
 
 \vspace{0.3cm}
 \noindent\href{https://github.com/Ken-2511/ECE241-Project}{\uline{
-\textbf{Verilog Pac-Man Game (UofT)}}} \hfill Nov 2024
+\textbf{Verilog Pac-Man Game (University of Toronto)}}} \hfill Nov 2024
 \begin{itemize}[leftmargin=0.2in]
-    \item Created a Pac-Man-style FPGA game on a custom Verilog framework supporting VGA output at 60 FPS.
+    \item Created a Pac-Man-style FPGA game using Verilog supporting PS/2 keyboard input and VGA output.
     \item Debugged signal synchronization issues and state-machine logic, boosting overall stability and playability.
-    \item Automated sprite conversion using Python + OpenCV for seamless integration of game graphics.
+    \item Automated image conversion using Python + OpenCV for seamless integration of game graphics.
+    \item Prototypeed the game using Pygame, ensuring accurate emulation of the FPGA version for agile development.
 \end{itemize}
 
 \vspace{0.3cm}
@@ -136,20 +133,22 @@ Relevant Courses: Applied Fundamentals of Deep Learning, Software Design and Com
 \vspace{0.3cm}
 \noindent\href{https://chengyongkang.me/chat}{\uline{
 \textbf{Self-Clone Chatbot with Diary Database}}} \hfill Oct 2024 - Present
+% @ChatGPT: for this project, if the job doesn't have so much related technical skills, you can remove this project.
 \begin{itemize}[leftmargin=0.2in]
     \item Built a self-hosted AI-powered chatbot that replicates personal interaction styles, deployed using React.js, FastAPI, and Nginx on a Raspberry Pi.
-    \item Integrated OpenAI API and a vector-search NoSQL database for real-time Q\&A functionality with personal diary data.
+    \item Integrated OpenAI API and a NoSQL database for real-time Q\&A functionality with personal diary data.
     \item Ensured secure and seamless remote access by implementing TLS encryption, DDNS, and optimizing for daily traffic from personal networks.
 \end{itemize}
 
 \vspace{0.3cm}
 \noindent\href{https://github.com/Ken-2511/RainBirthdayGift}{\uline{
-\textbf{RainBirthdayGift – AI-Driven Chatbot}}} \hfill Dec 2024
+\textbf{RainBirthdayGift – AI-Driven Chatbot}}} \hfill April 2024
 \begin{itemize}[leftmargin=0.2in]
-    \item Built a GPT-4-powered chatbot in 3 days using .NET WPF framework as a gift for a friend.
-    \item Integrated OpenAI API to enable real-time conversations, designed with a dynamic interface.
+    % @ChatGPT: you may want to remove one bullet point if one is not relevance.
+    \item Built a GPT-4-powered chatbot in 3 days using C\#, .NET, and WPF framework as a gift for a friend.
+    \item Integrated OpenAI API to enable real-time conversations, designed with a dynamic WPF interface using XAML.
     \item Enhanced experience by customizing UI with role-based colors and responsive message display.
-    \item Implemented efficient asynchronous API calls using data binding with \texttt{INotifyPropertyChanged}.
+    \item Implemented efficient asynchronous API calls to ensure smooth user interactions.
 \end{itemize}
 
 
