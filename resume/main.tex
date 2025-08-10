@@ -57,10 +57,10 @@ Relevant Courses: Applied Fundamentals of Deep Learning, Software Design and Com
 % @ChatGPT: when you are modifying this section, you may want to remove some of the skills that are less relevant to the job you are applying for.
 \section*{\textbf{TECHNICAL SKILLS}}
 \begin{itemize}[leftmargin=0.2in]
-    \item \textbf{Programming:} Python, C/C++, JavaScript/TypeScript, Java, Verilog, Assembly
-    \item \textbf{Frameworks:} PyTorch, React, FastAPI, LangChain
+    \item \textbf{Programming:} Python, C/C++, Node JS, Java, Verilog, Assembly(RISC-V)
+    \item \textbf{Frameworks:} PyTorch, React, FastAPI, LangChain, MCP
     \item \textbf{Tools:} Linux, SQL/NoSQL, Nginx, Docker, Git, SSH
-    \item \textbf{Hardware:} Arduino, Raspberry Pi, FPGA, LTSpice, Quartus, ModelSim
+    \item \textbf{Hardware:} Arduino, Raspberry Pi, FPGA, LTSpice, Quartus, ModelSim, STM32
     \item \textbf{Data and Visualization:} NumPy, Pandas, Matplotlib
 \end{itemize}
 
@@ -70,8 +70,18 @@ Relevant Courses: Applied Fundamentals of Deep Learning, Software Design and Com
 % EXPERIENCE
 %------------------------------------------
 \section*{\textbf{EXPERIENCE}}
-% add links
 
+\noindent\href{https://github.com/Ken-2511/UWB-Summer-Research}{\uline{
+\textbf{Research Assistant, Ultra-Wideband Communication Systems (University of Toronto)}}} \hfill Jun 2025 - Jul 2025
+\begin{itemize}[leftmargin=0.2in]
+    \item Developed hybrid modulation techniques combining 2PPM and 8PSK for UWB communication systems, achieving 500Mbps symbol rate at 4GHz carrier frequency with 20dB SNR performance.
+    \item Implemented complete signal processing pipeline using MATLAB Simulink and Python, including phase noise modeling, AWGN addition, and multi-stage sampling rate conversion (16GHz → 1024GHz).
+    \item Designed innovative demodulation algorithms using K-means clustering for automatic constellation calibration and template matching for precise pulse position detection.
+    \item Achieved sub-150$\mu$s measurement precision through advanced edge detection algorithms and dynamic offset correction, processing terahertz-scale sampling data (1.024THz) for high-resolution signal analysis.
+    \item Conducted comprehensive BER analysis and performance evaluation, generating 50MB+ of simulation data and establishing ground truth datasets for future UWB research.
+\end{itemize}
+
+\vspace{0.3cm}
 \noindent\href{https://github.com/VolunTrack/Web}{\uline{
 \textbf{Frontend Manager, Voluntrack.org (Non-Profit)}}} \textbar{} \textit{React, Figma, MS Project} \hfill May 2024 - Present
 \begin{itemize}[leftmargin=0.2in]
@@ -80,13 +90,30 @@ Relevant Courses: Applied Fundamentals of Deep Learning, Software Design and Com
     \item Integrated Firebase for secure volunteer data storage and real-time search, allowing fuzzy search and filtering.
 \end{itemize}
 
-\vspace{0.3cm}
+\noindent\rule{\linewidth}{1pt}
+
+%------------------------------------------
+% PROJECTS
+%------------------------------------------
+\section*{\textbf{PROJECTS}}
+
 \noindent\href{https://github.com/Ken-2511/HandwritingRecognition}{\uline{
 \textbf{Project Lead, Handwritten Text Recognition (University of Toronto)}}} \hfill Jun 2024 - Aug 2024
 \begin{itemize}[leftmargin=0.2in]
     \item Led a remote team to develop a PyTorch-based CRNN model for handwritten text recognition.
     \item Achieved 87\% word-level and 95\% character-level accuracy on the test set with 10,000+ samples.
     \item Deployed connected-pixel algorithms for word positioning and word segmentation, processing 1024$\times$1024 images in less than 4 seconds.
+\end{itemize}
+
+\vspace{0.3cm}
+\noindent\href{https://github.com/XiuShw/Wrong-Tree}{\uline{
+\textbf{Core AI Developer, Wrong-Tree Unity Game}}} \hfill Dec 2024 - Jan 2025
+\begin{itemize}[leftmargin=0.2in]
+    \item Designed and implemented comprehensive NPC behavior system with 9-state finite state machine (Idle, Wander, Share, Steal, Flee, etc.) for intelligent agent interactions in Unity.
+    \item Developed advanced AI decision-making algorithms based on proximity detection, attitude systems, and dynamic reputation scoring, enabling realistic NPC social behaviors.
+    \item Created complex multi-NPC interaction framework with "securing" and "releasing" mechanisms, supporting simultaneous share/steal operations with visual feedback animations.
+    \item Implemented dynamic lighting system with flickering effects and procedural light intensity management, integrating seamlessly with core game mechanics.
+    \item Built modular utility systems including random walk algorithms, distance-based targeting, and state synchronization, resulting in scalable and maintainable codebase.
 \end{itemize}
 
 \vspace{0.3cm}
@@ -101,14 +128,19 @@ Relevant Courses: Applied Fundamentals of Deep Learning, Software Design and Com
     \item Conducted research on noise isolation, light intensity, and light temperature to deliver optimal design solutions.
 \end{itemize}
 
-\noindent\rule{\linewidth}{1pt}
+\vspace{0.3cm}
+\noindent\href{https://github.com/Ken-2511/utek_disaster_communication_system}{\uline{
+\textbf{UTEK Wildfire Disaster Communication System}}} \hfill Jan 2025
+\begin{itemize}[leftmargin=0.2in]
+    \item \textbf{Top 8 Finalist} in University of Toronto Engineering Competition (UTEK) among all competing teams.
+    \item Built real-time communication platform with Python, Streamlit, and Flask for wildfire emergency response coordination.
+    \item Implemented interactive map interface using Folium for visualizing fire incidents and location-based alerts.
+    \item Developed bidirectional communication system between residents and rescue teams with photo upload capabilities.
+    \item Created severity classification system with automated risk assessment for intelligent resource allocation.
+    \item Designed secure authentication portal for authorized rescue personnel with role-based access control.
+\end{itemize}
 
-%------------------------------------------
-% PROJECTS
-%------------------------------------------
-\section*{\textbf{PROJECTS}}
-
-
+\vspace{0.3cm}
 \noindent\href{https://github.com/Ken-2511/Fourier-Epicycle-Draw}{\uline{
 \textbf{Fourier Epicycle Drawing Visualization System}}} \hfill May 2025
 \begin{itemize}[leftmargin=0.2in]
@@ -120,8 +152,8 @@ Relevant Courses: Applied Fundamentals of Deep Learning, Software Design and Com
     \item Produced educational outputs and visualizations for teaching and presentations.
 \end{itemize}
 
-
-\noindent\href{https://github.com/YourUser/FPGA-PolySynth}{\uline{
+\vspace{0.3cm}
+\noindent\href{https://github.com/alexzjm/ece243-sound-synthesizer}{\uline{
 \textbf{FPGA Polyphonic Synthesizer (DE1‑SoC)}}} \hfill Mar 2025
 \begin{itemize}[leftmargin=0.2in]
     \item Implemented a 20‑voice digital synthesizer in C for a Nios‑V soft‑core, streaming \textbf{8 kHz Q15 audio} through the on‑chip Audio FIFO with $<$1 \% CPU overhead.  
@@ -132,8 +164,8 @@ Relevant Courses: Applied Fundamentals of Deep Learning, Software Design and Com
 \end{itemize}
 
 
-\noindent
-\textbf{City Mapify – Interactive City Mapping Application (University of Toronto)} \hfill Jan 2025 - Apr 2025
+\vspace{0.3cm}
+\noindent\textbf{City Mapify – Interactive City Mapping Application (University of Toronto)} \hfill Jan 2025 - Apr 2025
 \begin{itemize}[leftmargin=0.2in]
     \item Developed a high-performance mapping engine in C++ to process OpenStreetMap data and render city maps.
     \item Designed efficient spatial data structures (quadtrees) for dynamic querying and smooth zoom-based rendering.
@@ -143,6 +175,7 @@ Relevant Courses: Applied Fundamentals of Deep Learning, Software Design and Com
 \end{itemize}
 
 
+\vspace{0.3cm}
 \noindent\href{https://github.com/Ken-2511/Diary-with-ChatGPT-Comment}{\uline{
 \textbf{Diary with AI Feedback}}} \hfill Sep 2023 -- On Going
 \begin{itemize}[leftmargin=0.2in]
@@ -180,6 +213,27 @@ Relevant Courses: Applied Fundamentals of Deep Learning, Software Design and Com
     \item Built a self-hosted AI-powered chatbot that replicates personal interaction styles, deployed using React.js, FastAPI, and Nginx on a Raspberry Pi.
     \item Integrated OpenAI API and a NoSQL database for real-time Q\&A functionality with personal diary data.
     \item Ensured secure and seamless remote access by implementing TLS encryption, DDNS, and optimizing for daily traffic from personal networks.
+\end{itemize}
+
+\vspace{0.3cm}
+\noindent\href{https://github.com/Ken-2511/Photogate}{\uline{
+\textbf{Photogate Speed Measurement System}}} \hfill High School Project
+\begin{itemize}[leftmargin=0.2in]
+    \item Designed and built 10 laser-based speed measurement units with nixie tube displays for high school physics education.
+    \item Achieved sub-150us measurement precision using Arduino microcontrollers and custom PCB design.
+    \item Developed custom infrared communication protocol supporting 32-byte data transmission for wireless control.
+    \item Created Python GUI using Tkinter for experiment control, real-time monitoring, and data export capabilities.
+    \item Integrated 3D printed components and aluminum framework for durable classroom-ready construction.
+\end{itemize}
+
+\vspace{0.3cm}
+\noindent\href{https://github.com/Ken-2511/AcornCarwler}{\uline{
+\textbf{Acorn Course Timetable Monitor Crawler}}} \hfill Personal Project
+\begin{itemize}[leftmargin=0.2in]
+    \item Built automated Python web crawler to monitor University of Toronto's Acorn course timetable system for real-time changes.
+    \item Implemented intelligent change detection algorithms with robust error handling and automatic recovery mechanisms.
+    \item Developed notification system for course availability updates, helping students secure spots in full courses.
+    \item Created comprehensive logging system for tracking enrollment patterns and course schedule modifications.
 \end{itemize}
 
 % \vspace{0.3cm}
