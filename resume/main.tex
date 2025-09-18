@@ -71,22 +71,28 @@ Relevant Courses: Applied Fundamentals of Deep Learning, Software Design and Com
 %------------------------------------------
 \section*{\textbf{EXPERIENCE}}
 
-\noindent\href{https://github.com/Ken-2511/UWB-Summer-Research}{\uline{
-\textbf{Research Assistant, Ultra-Wideband Communication Systems (University of Toronto)}}} \hfill Jun 2025 - Jul 2025
+\noindent\href{https://github.com/Ken-2511/ppm-psk-visualize}{\uline{\textbf{Research Assistant, Ultra-Wideband Receiver Design (University of Toronto)}}} \hfill Jun 2025 - Jul 2025
 \begin{itemize}[leftmargin=0.2in]
-    \item Developed hybrid modulation techniques combining 2PPM and 8PSK for UWB communication systems, achieving 500Mbps symbol rate at 4GHz carrier frequency with 20dB SNR performance.
-    \item Implemented complete signal processing pipeline using MATLAB Simulink and Python, including phase noise modeling, AWGN addition, and multi-stage sampling rate conversion (16GHz → 1024GHz).
-    \item Designed innovative demodulation algorithms using K-means clustering for automatic constellation calibration and template matching for precise pulse position detection.
-    \item Achieved sub-150$\mu$s measurement precision through advanced edge detection algorithms and dynamic offset correction, processing terahertz-scale sampling data (1.024THz) for high-resolution signal analysis.
-    \item Conducted comprehensive BER analysis and performance evaluation, generating 50MB+ of simulation data and establishing ground truth datasets for future UWB research.
+    \item Verified hybrid PPM+PSK TX pre tape-out; built Python/Simulink pipelines for 2ns symbol sync and carrier recovery under discontinuous 4GHz.
+    \item Built pulse-position detection and K-means constellation calibration to mitigate cross-modulation timing shifts (\textasciitilde100ps).
+    \item Presented at Undergraduate Engineering Research Day with an interactive hybrid-modulation demo site.
 \end{itemize}
+
+\vspace{0.3cm}
+\noindent\textbf{Research Assistant, Wireless Power Transfer Coil Design (University of Toronto)} \hfill Jul 2025 - Aug 2025
+\begin{itemize}[leftmargin=0.2in]
+    \item Designed 13.56MHz WPT coils for a BCI implant (3mm×8mm RX, \textasciitilde20mm link).
+    \item Ran HFSS sweeps (turns, trace size, TX diameter) to quantify impacts on coupling ($k$) and quality factor ($Q$).
+    \item Produced PCB layouts with tuning plan; distilled design rules and prepared prototypes for validation.
+\end{itemize}
+
 
 \vspace{0.3cm}
 \noindent\href{https://github.com/VolunTrack/Web}{\uline{
 \textbf{Frontend Manager, Voluntrack.org (Non-Profit)}}} \textbar{} \textit{React, Figma, MS Project} \hfill May 2024 - Present
 \begin{itemize}[leftmargin=0.2in]
     \item Led a 4-person team to redesign the web interface using React.js, improving user engagement by 20\%.
-    \item Designed UI in Figma and managed tasks with GitHub Projects and MS Project.
+    \item Designed UI in Figma and managed tasks with GitHub Project.
     \item Integrated Firebase for secure volunteer data storage and real-time search, allowing fuzzy search and filtering.
 \end{itemize}
 
@@ -156,7 +162,7 @@ Relevant Courses: Applied Fundamentals of Deep Learning, Software Design and Com
 \noindent\href{https://github.com/alexzjm/ece243-sound-synthesizer}{\uline{
 \textbf{FPGA Polyphonic Synthesizer (DE1‑SoC)}}} \hfill Mar 2025
 \begin{itemize}[leftmargin=0.2in]
-    \item Implemented a 20‑voice digital synthesizer in C for a Nios‑V soft‑core, streaming \textbf{8 kHz Q15 audio} through the on‑chip Audio FIFO with $<$1 \% CPU overhead.  
+    \item Implemented a 20‑voice digital synthesizer in C for a Nios‑V soft‑core, streaming \textbf{8 kHz Q15 audio} through the on‑chip Audio FIFO.  
     \item Replaced all floating‑point math with \textbf{32‑bit phase accumulators} and fixed‑point kernels for sine, square, triangle, and sawtooth waves, enabling real‑time mixing and envelope processing.  
     \item Designed an \textbf{ADSR envelope engine} driven by slide‑switch “knobs” and pushbuttons; state changes are visualized on a double‑buffered 320 × 240 VGA UI.  
     \item Integrated PS/2 keyboard interrupts for sub‑µs latency note‑on/off events; on‑screen piano keys light up in sync with hardware playback.  
@@ -168,8 +174,8 @@ Relevant Courses: Applied Fundamentals of Deep Learning, Software Design and Com
 \noindent\textbf{City Mapify – Interactive City Mapping Application (University of Toronto)} \hfill Jan 2025 - Apr 2025
 \begin{itemize}[leftmargin=0.2in]
     \item Developed a high-performance mapping engine in C++ to process OpenStreetMap data and render city maps.
-    \item Designed efficient spatial data structures (quadtrees) for dynamic querying and smooth zoom-based rendering.
-    \item Implemented advanced pathfinding algorithms (Dijkstra, A*) for route planning and delivery optimization.
+    \item Designed efficient spatial data structures (\textbf{quadtrees}) for dynamic querying and smooth zoom-based rendering.
+    \item Implemented advanced pathfinding algorithms (\textbf{Dijkstra, A*, Simulated Annealing, Ant Colony Optimization}) for route planning and delivery optimization.
     \item Integrated real-time features like day/night mode, weather data, and AI-powered route descriptions.
     \item Enhanced performance with multithreading (OpenMP) and RESTful API integration (libcurl).
 \end{itemize}
@@ -179,8 +185,8 @@ Relevant Courses: Applied Fundamentals of Deep Learning, Software Design and Com
 \noindent\href{https://github.com/Ken-2511/Diary-with-ChatGPT-Comment}{\uline{
 \textbf{Diary with AI Feedback}}} \hfill Sep 2023 -- On Going
 \begin{itemize}[leftmargin=0.2in]
-    \item Designed and implemented a journaling program integrated with OpenAI’s GPT API, generating insightful feedback and suggestions for over 570 diary entries.
-    \item Developed a diary sorting algorithm to retrieve contextually similar past entries, enhancing user experience and maintaining API costs below 0.2\$ per call.
+    \item Designed and implemented a journaling program integrated with OpenAI’s GPT API, generating insightful feedback and suggestions for over 750 diary entries.
+    \item Developed a diary sorting algorithm to retrieve contextually similar past entries by vector search, enhancing user experience and maintaining API costs below 0.2\$ per call.
     \item Optimized data-sorting pipelines and API request processes, reducing average diary load time from 10s to 0.5s, enabling seamless daily use.
 \end{itemize}
 
@@ -202,7 +208,7 @@ Relevant Courses: Applied Fundamentals of Deep Learning, Software Design and Com
     \item Built a modular system with Raspberry Pi capturing images and sending them to a Windows host for local storage and analysis.
     \item Deployed Nginx, FastAPI, and libcurl for data transfer, facilitating real-time user monitoring and minimal downtime.
     % @ChatGPT: for the bullet point below you can change the technologies used to match the job you are applying for.
-    \item Currently exploring Azure Face APIs and transfer learning for user-behavior analysis on a dataset of over 20,000 images.
+    \item Currently exploring Azure Face APIs and transfer learning for user-behavior analysis on a dataset of over 180,000 images.
 \end{itemize}
 
 \vspace{0.3cm}
@@ -219,7 +225,7 @@ Relevant Courses: Applied Fundamentals of Deep Learning, Software Design and Com
 \noindent\href{https://github.com/Ken-2511/Photogate}{\uline{
 \textbf{Photogate Speed Measurement System}}} \hfill High School Project
 \begin{itemize}[leftmargin=0.2in]
-    \item Designed and built 10 laser-based speed measurement units with nixie tube displays for high school physics education.
+    \item Designed and built 10 laser-based speed measurement units with 7-segment displays for high school physics education.
     \item Achieved sub-150us measurement precision using Arduino microcontrollers and custom PCB design.
     \item Developed custom infrared communication protocol supporting 32-byte data transmission for wireless control.
     \item Created Python GUI using Tkinter for experiment control, real-time monitoring, and data export capabilities.
@@ -235,18 +241,6 @@ Relevant Courses: Applied Fundamentals of Deep Learning, Software Design and Com
     \item Developed notification system for course availability updates, helping students secure spots in full courses.
     \item Created comprehensive logging system for tracking enrollment patterns and course schedule modifications.
 \end{itemize}
-
-% \vspace{0.3cm}
-% \noindent\href{https://github.com/Ken-2511/RainBirthdayGift}{\uline{
-% \textbf{RainBirthdayGift – AI-Driven Chatbot}}} \hfill April 2024
-% \begin{itemize}[leftmargin=0.2in]
-%     % @ChatGPT: you may want to remove one bullet point if one is not relevance.
-%     \item Built a GPT-4-powered chatbot in 3 days using C\#, .NET, and WPF framework as a gift for a friend.
-%     \item Integrated OpenAI API to enable real-time conversations, designed with a dynamic WPF interface using XAML.
-%     \item Enhanced experience by customizing UI with role-based colors and responsive message display.
-%     \item Implemented efficient asynchronous API calls to ensure smooth user interactions.
-% \end{itemize}
-
 
 \noindent\rule{\linewidth}{1pt}
 
@@ -265,13 +259,13 @@ Relevant Courses: Applied Fundamentals of Deep Learning, Software Design and Com
 \vspace{0.3cm}
 \noindent\textbf{ECE Awards \& Dean's List Scholar (UofT)} \hfill Sep 2024
 \begin{itemize}[leftmargin=0.2in]
-    \item Recognized for outstanding academic performance (GPA 3.92/4.0).
+    \item Recognized for outstanding academic performance.
 \end{itemize}
 
-\vspace{0.3cm}
-\noindent\textbf{American Computer Science League (ACSL) - Bronze Prize} \hfill Jan 2021
-\begin{itemize}[leftmargin=0.2in]
-    \item Placed in top 10\% overall, with top-20\% scores in the 4th round, after 60 hours of training.
-\end{itemize}
+% \vspace{0.3cm}
+% \noindent\textbf{American Computer Science League (ACSL) - Bronze Prize} \hfill Jan 2021
+% \begin{itemize}[leftmargin=0.2in]
+%     \item Placed in top 10\% overall, with top-20\% scores in the 4th round, after 60 hours of training.
+% \end{itemize}
 
 \end{document}

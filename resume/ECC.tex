@@ -1,0 +1,135 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage{geometry}
+\geometry{margin=1in}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage[normalem]{ulem} % 避免 ulem 修改默认的 LaTeX 行为
+% \usepackage{helvet}
+% \renewcommand{\familydefault}{\sfdefault}
+\pagenumbering{gobble} % 取消页码
+
+\geometry{margin=0.7in}
+
+\setlength{\parskip}{0.5pt}
+\setlist{nosep}  
+\usepackage[compact]{titlesec}
+\usepackage{setspace}
+\setstretch{1.0}
+
+% @ChatGPT: IMPORTANT INFORMATION: this is the master resume. You may be prompted to modify this file based on the job you are applying for.
+% For each job application, you should write a new file by COPYING most of the content from this file.
+% You are NOT allowed to change the content unless you are prompted by another `@ChatGPT' message.
+% You need to delete two or three of the projects, experiences, or awards that are less relevant to the job you are applying for so as to make the resume fit within one page.
+% You should not change any of the formatting, including `\geometry...` and `\noindent...' etc.
+
+\begin{document}
+
+%------------------------------------------
+% HEADER
+%------------------------------------------
+\begin{center}
+    \huge \textbf{Yongkang Cheng}\\
+    \vspace{0.2cm}
+    \small
+    \href{https://chengyongkang.me/}{\uline{chengyongkang.me}} \,\textbar{}\,
+    437-663-2855 \,\textbar{}\,
+    \href{https://www.github.com/Ken-2511/}{\uline{github.com/Ken-2511}} \,\textbar{}\,
+    \href{mailto:iwmain@outlook.com}{\uline{iwmain@outlook.com}} \,\textbar{}\,
+    \href{https://www.linkedin.com/in/chengyongkang/}{\uline{linkedin.com/in/chengyongkang}}
+\end{center}
+
+\vskip -2ex
+\noindent\rule{\linewidth}{2pt}
+
+%------------------------------------------
+% EDUCATION
+%------------------------------------------
+\section*{\textbf{EDUCATION}}
+\textbf{University of Toronto (St. George Campus), Toronto, ON} \hfill Sep 2023 - May 2028 (expected)\\
+Bachelor of Applied Science in Computer Engineering + PEY Co-op \\
+Relevant Courses: Applied Fundamentals of Deep Learning, Software Design and Communication
+
+\noindent\rule{\linewidth}{1pt}
+
+%------------------------------------------
+% TECHNICAL SKILLS
+%------------------------------------------
+% @ChatGPT: when you are modifying this section, you may want to remove some of the skills that are less relevant to the job you are applying for.
+\section*{\textbf{TECHNICAL SKILLS}}
+\begin{itemize}[leftmargin=0.2in]
+    \item \textbf{Programming:} Python, C/C++, Node JS, Java, Verilog, Assembly(RISC-V)
+    \item \textbf{Frameworks:} PyTorch, React, FastAPI, LangChain, MCP
+    \item \textbf{Tools:} Linux, SQL/NoSQL, Nginx, Docker, Git, SSH
+    \item \textbf{Hardware:} Arduino, Raspberry Pi, FPGA, LTSpice, Quartus, ModelSim, STM32
+    \item \textbf{Data and Visualization:} NumPy, Pandas, Matplotlib
+\end{itemize}
+
+\noindent\rule{\linewidth}{1pt}
+
+%------------------------------------------
+% EXPERIENCE
+%------------------------------------------
+\section*{\textbf{EXPERIENCE}}
+
+\noindent\href{https://github.com/Ken-2511/ppm-psk-visualize}{\uline{\textbf{Research Assistant, Ultra-Wideband Receiver Design (University of Toronto)}}} \hfill Jun 2025 - Jul 2025
+\begin{itemize}[leftmargin=0.2in]
+    \item Verified hybrid PPM+PSK TX pre tape-out; built Python/Simulink pipelines for 2ns symbol sync and carrier recovery under discontinuous 4GHz.
+    \item Built pulse-position detection and K-means constellation calibration to mitigate cross-modulation timing shifts (\textasciitilde100ps).
+    \item Presented at Undergraduate Engineering Research Day with an interactive hybrid-modulation demo site.
+\end{itemize}
+
+\vspace{0.3cm}
+\noindent\textbf{Research Assistant, Wireless Power Transfer Coil Design (University of Toronto)} \hfill Jul 2025 - Aug 2025
+\begin{itemize}[leftmargin=0.2in]
+    \item Designed 13.56MHz WPT coils for a BCI implant (3mm×8mm RX, \textasciitilde20mm link).
+    \item Ran HFSS sweeps (turns, trace size, TX diameter) to quantify impacts on coupling ($k$) and quality factor ($Q$).
+    \item Produced PCB layouts with tuning plan; distilled design rules and prepared prototypes for validation.
+\end{itemize}
+
+%------------------------------------------
+% PROJECTS
+%------------------------------------------
+\section*{\textbf{PROJECTS}}
+
+\noindent\href{https://github.com/Ken-2511/HandwritingRecognition}{\uline{
+\textbf{Project Lead, Handwritten Text Recognition (University of Toronto)}}} \hfill Jun 2024 - Aug 2024
+\begin{itemize}[leftmargin=0.2in]
+    \item Led a remote team to develop a PyTorch-based CRNN model for handwritten text recognition.
+    \item Achieved 87\% word-level and 95\% character-level accuracy on the test set with 10,000+ samples.
+    \item Deployed connected-pixel algorithms for word positioning and word segmentation, processing 1024$\times$1024 images in less than 4 seconds.
+\end{itemize}
+
+\vspace{0.3cm}
+\noindent\textbf{City Mapify – Interactive City Mapping Application (University of Toronto)} \hfill Jan 2025 - Apr 2025
+\begin{itemize}[leftmargin=0.2in]
+    \item Developed a high-performance mapping engine in C++ to process OpenStreetMap data and render city maps.
+    \item Designed efficient spatial data structures (\textbf{quadtrees}) for dynamic querying and smooth zoom-based rendering.
+    \item Implemented advanced pathfinding algorithms (\textbf{Dijkstra, A*, Simulated Annealing, Ant Colony Optimization}) for route planning and delivery optimization.
+    \item Integrated real-time features like day/night mode, weather data, and AI-powered route descriptions.
+\end{itemize}
+
+
+\vspace{0.3cm}
+\noindent\href{https://github.com/Ken-2511/Diary-with-ChatGPT-Comment}{\uline{
+\textbf{Diary with AI Feedback}}} \hfill Sep 2023 -- On Going
+\begin{itemize}[leftmargin=0.2in]
+    \item Designed and implemented a journaling program integrated with OpenAI’s GPT API, generating insightful feedback and suggestions for over 750 diary entries.
+    \item Developed a diary sorting algorithm to retrieve contextually similar past entries by vector search, enhancing user experience and maintaining API costs below 0.2\$ per call.
+    \item Optimized data-sorting pipelines and API request processes, reducing average diary load time from 10s to 0.5s, enabling seamless daily use.
+\end{itemize}
+
+\noindent\rule{\linewidth}{1pt}
+
+%------------------------------------------
+% AWARDS & ACCOMPLISHMENTS
+%------------------------------------------
+\section*{\textbf{AWARDS \& ACCOMPLISHMENTS}}
+
+\noindent\textbf{University of Toronto Excellence Award (UTEA)} \hfill Apr 2025
+\begin{itemize}[leftmargin=0.2in]
+    \item Awarded UTEA for top academic performance and research potential.
+    \item Completed a 14-week full-time research project with faculty supervision.
+    \item Received \$7,500 scholarship for research excellence and inclusion.
+\end{itemize}
+
+\end{document}
