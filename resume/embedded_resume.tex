@@ -1,0 +1,202 @@
+\documentclass[letterpaper,10pt]{article}
+\usepackage{geometry}
+\geometry{margin=0.7in}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage[normalem]{ulem}
+\pagenumbering{gobble}
+
+\setlength{\parskip}{0.5pt}
+\setlist{nosep}  
+\usepackage[compact]{titlesec}
+\usepackage{setspace}
+\setstretch{1.0}
+
+\begin{document}
+
+%------------------------------------------
+% HEADER
+%------------------------------------------
+\begin{center}
+    \huge \textbf{Yongkang Cheng}\\
+    \vspace{0.2cm}
+    \small
+    \href{https://chengyongkang.me/}{\uline{chengyongkang.me}} \,\textbar{}\,
+    437-663-2855 \,\textbar{}\,
+    \href{https://www.github.com/Ken-2511/}{\uline{github.com/Ken-2511}} \,\textbar{}\,
+    \href{mailto:iwmain@outlook.com}{\uline{iwmain@outlook.com}} \,\textbar{}\,
+    \href{https://www.linkedin.com/in/chengyongkang/}{\uline{linkedin.com/in/chengyongkang}}
+\end{center}
+
+\vskip -2ex
+\noindent\rule{\linewidth}{2pt}
+
+%------------------------------------------
+% EDUCATION
+%------------------------------------------
+\section*{\textbf{EDUCATION}}
+\textbf{University of Toronto (St. George Campus), Toronto, ON} \hfill Sep 2023 - May 2028 (expected)\\
+Bachelor of Applied Science in Computer Engineering + PEY Co-op (cGPA: 3.87/4.0) \\
+Relevant Courses: Digital Logic Design, Computer Architecture, Real-Time Systems, Signal Processing
+
+\noindent\rule{\linewidth}{1pt}
+
+%------------------------------------------
+% TECHNICAL SKILLS
+%------------------------------------------
+\section*{\textbf{TECHNICAL SKILLS}}
+\begin{itemize}[leftmargin=0.2in]
+    \item \textbf{Embedded Programming:} C/C++, Assembly (RISC-V, ARM), Python, Real-time Programming
+    \item \textbf{Hardware Platforms:} FPGA (Intel DE1-SoC), STM32, Arduino, Raspberry Pi, Nios-V, ARM Cortex
+    \item \textbf{Hardware Design:} Verilog, PCB Design, Circuit Analysis, Digital Signal Processing
+    \item \textbf{Tools \& Protocols:} Quartus, ModelSim, Git, I2C, SPI, UART, CAN, GPIO, PWM, ADC/DAC
+    \item \textbf{Robotics \& Control:} PID Control, Sensor Integration, Motor Control, Computer Vision
+\end{itemize}
+
+\noindent\rule{\linewidth}{1pt}
+
+%------------------------------------------
+% EXPERIENCE
+%------------------------------------------
+\section*{\textbf{EXPERIENCE}}
+
+\noindent\textbf{Research Assistant, Wireless Power Transfer Coil Design (University of Toronto)} \hfill Jul 2025 - Aug 2025\\
+\textit{Research Intern, X-Lab, University of Toronto} \hfill \textit{Toronto, ON}
+\begin{itemize}[leftmargin=0.2in]
+    \item Designed 13.56MHz WPT coils for a BCI implant (3mm×8mm RX, \textasciitilde20mm link).
+    \item Ran HFSS sweeps (turns, trace size, TX diameter) to quantify impacts on coupling ($k$) and quality factor ($Q$).
+    \item Produced PCB layouts with tuning plan; distilled design rules and prepared prototypes for validation.
+    \item Implemented embedded control systems for power regulation and wireless communication protocols.
+\end{itemize}
+
+\vspace{0.2cm}
+\noindent\href{https://github.com/Ken-2511/ppm-psk-visualize}
+{\uline{\textbf{Research Assistant, Ultra-Wideband Receiver Design (University of Toronto)}}} \hfill Jun 2025 - Jul 2025\\
+\textit{Research Intern, X-Lab, University of Toronto} \hfill \textit{Toronto, ON}
+\begin{itemize}[leftmargin=0.2in]
+    \item Verified hybrid PPM+PSK TX chip pre tape-out; built embedded signal processing systems for 2ns symbol sync.
+	\item Implemented real-time pulse-position detection algorithms on embedded processors with sub-microsecond latency.
+    \item Developed low-level drivers and interrupt handlers for high-speed data acquisition systems.
+\end{itemize}
+
+\noindent\rule{\linewidth}{1pt}
+
+%------------------------------------------
+% PROJECTS
+%------------------------------------------
+\section*{\textbf{PROJECTS}}
+
+\noindent\href{https://github.com/alexzjm/ece243-sound-synthesizer}{\uline{
+\textbf{FPGA Polyphonic Synthesizer (DE1‑SoC)}}} \hfill Mar 2025
+\begin{itemize}[leftmargin=0.2in]
+    \item Implemented a 20‑voice digital synthesizer in C for a Nios‑V soft‑core, streaming \textbf{8 kHz Q15 audio} through the on‑chip Audio FIFO.  
+    \item Replaced all floating‑point math with \textbf{32‑bit phase accumulators} and fixed‑point kernels for real‑time audio processing.  
+    \item Designed an \textbf{ADSR envelope engine} with hardware-software co-design; integrated slide‑switch GPIO and pushbutton interrupts.
+    \item Integrated PS/2 keyboard interrupts for sub‑µs latency note‑on/off events with real-time response guarantees.
+    \item Built custom VGA display controller with double‑buffered 320 × 240 output and modular drawing primitives for live waveform visualization.
+    \item Implemented efficient memory management and DMA transfers for seamless audio streaming without buffer underruns.
+\end{itemize}
+
+\vspace{0.2cm}
+\noindent\href{https://github.com/Ken-2511/ECE241-Project}{\uline{
+\textbf{Verilog Pac-Man Game (University of Toronto)}}} \hfill Nov 2024
+\begin{itemize}[leftmargin=0.2in]
+    \item Created a Pac-Man-style FPGA game using Verilog supporting PS/2 keyboard input and VGA output.
+    \item Implemented complex finite state machines for game logic, collision detection, and real-time sprite rendering.
+    \item Designed custom memory controllers and video timing generators for stable 60Hz VGA output.
+    \item Debugged signal synchronization issues and clock domain crossing problems for robust embedded system operation.
+    \item Integrated embedded image processing pipeline with Python + OpenCV for graphics conversion and optimization.
+\end{itemize}
+
+\vspace{0.2cm}
+\noindent\href{https://github.com/Ken-2511/Photogate}{\uline{
+\textbf{Photogate Speed Measurement System}}} \hfill High School Project
+\begin{itemize}[leftmargin=0.2in]
+    \item Designed and built 10 laser-based speed measurement units with 7-segment displays for high school physics education.
+    \item Achieved sub-150us measurement precision using Arduino microcontrollers with interrupt-driven timing algorithms.
+    \item Developed custom infrared communication protocol supporting 32-byte data transmission with error correction.
+    \item Implemented precise timing circuits with crystal oscillators and hardware timer peripherals for accurate measurements.
+    \item Created Python GUI using Tkinter for experiment control, real-time monitoring, and USB serial communication.
+    \item Integrated 3D printed mechanical components with embedded electronics for durable classroom-ready construction.
+\end{itemize}
+
+\vspace{0.2cm}
+\noindent\href{https://github.com/Ken-2511/WillPower}{\uline{
+\textbf{WillPower \textbar{} Time Management \& Monitoring}}} \hfill Jan 2025 - Present
+\begin{itemize}[leftmargin=0.2in]
+    \item Built a distributed embedded system with Raspberry Pi capturing images and transmitting to Windows host for analysis.
+    \item Implemented real-time data acquisition with camera interfacing, GPIO control, and network communication protocols.
+    \item Deployed embedded web server using Nginx and FastAPI for RESTful API communication between distributed nodes.
+    \item Developed low-power operation modes and efficient data compression algorithms for continuous monitoring applications.
+    \item Created robust error handling and watchdog systems for autonomous embedded operation with minimal supervision.
+\end{itemize}
+
+\vspace{0.2cm}
+\noindent\textbf{Autonomous Robot Navigation System} \hfill Academic Project
+\begin{itemize}[leftmargin=0.2in]
+    \item Developed autonomous navigation system using STM32 microcontroller with sensor fusion algorithms.
+    \item Implemented PID control systems for motor control and path following with real-time feedback control.
+    \item Integrated ultrasonic sensors, IMU, and encoders for obstacle avoidance and localization.
+    \item Built custom PCB with power management, motor drivers, and sensor interface circuits.
+    \item Programmed embedded C firmware with FreeRTOS for real-time task scheduling and interrupt handling.
+\end{itemize}
+
+\vspace{0.2cm}
+\noindent\textbf{IoT Environmental Monitoring Station} \hfill Personal Project
+\begin{itemize}[leftmargin=0.2in]
+    \item Designed wireless sensor network using ESP32 microcontrollers for environmental data collection.
+    \item Implemented low-power wireless communication protocols (WiFi, Bluetooth) for remote data transmission.
+    \item Integrated multiple sensors (temperature, humidity, air quality) with calibration and filtering algorithms.
+    \item Developed embedded web interface for real-time monitoring and historical data visualization.
+    \item Created battery management system with solar charging capability for outdoor deployment.
+\end{itemize}
+
+\vspace{0.2cm}
+\noindent\textbf{Digital Signal Processing on Embedded Systems} \hfill Academic Project
+\begin{itemize}[leftmargin=0.2in]
+    \item Implemented real-time FIR and IIR filters on ARM Cortex-M processors for audio signal processing.
+    \item Optimized fixed-point arithmetic algorithms for embedded processors without floating-point units.
+    \item Developed efficient circular buffer implementations and DMA-based data transfer for continuous processing.
+    \item Created comprehensive testing framework with signal generators and automated verification systems.
+\end{itemize}
+
+\vspace{0.2cm}
+\noindent\href{https://github.com/XiuShw/Wrong-Tree}{\uline{
+\textbf{Core AI Developer, Wrong-Tree Unity Game}}} \hfill Dec 2024 - Jan 2025
+\begin{itemize}[leftmargin=0.2in]
+    \item Designed 9-state finite state machine for intelligent NPC behaviors with real-time decision-making algorithms.
+    \item Implemented efficient proximity detection and dynamic reputation scoring systems optimized for embedded-style constraints.
+    \item Created modular utility systems including random walk algorithms and distance-based targeting for resource-constrained environments.
+    \item Built scalable multi-agent interaction framework supporting simultaneous operations with minimal computational overhead.
+\end{itemize}
+
+\vspace{0.2cm}
+\noindent\textbf{City Mapify – Interactive City Mapping Application (University of Toronto)} \hfill Jan 2025 - Apr 2025
+\begin{itemize}[leftmargin=0.2in]
+    \item Developed high-performance mapping engine in C++ optimized for embedded and resource-constrained systems.
+    \item Designed efficient spatial data structures (\textbf{quadtrees}) for real-time querying with minimal memory footprint.
+    \item Implemented pathfinding algorithms (\textbf{Dijkstra, A*}) optimized for embedded processors with limited computational resources.
+    \item Enhanced performance with multithreading techniques suitable for multi-core embedded architectures.
+\end{itemize}
+
+\noindent\rule{\linewidth}{1pt}
+
+%------------------------------------------
+% AWARDS & ACCOMPLISHMENTS
+%------------------------------------------
+\section*{\textbf{AWARDS \& ACCOMPLISHMENTS}}
+
+\noindent\textbf{University of Toronto Excellence Award (UTEA)} \hfill Apr 2025
+\begin{itemize}[leftmargin=0.2in]
+    \item Awarded UTEA for top academic performance and research potential in embedded systems.
+    \item Completed a 14-week full-time research project focusing on embedded hardware design and implementation.
+    \item Received \$7,500 scholarship for research excellence and inclusion.
+\end{itemize}
+
+\vspace{0.2cm}
+\noindent\textbf{ECE Awards \& Dean's List Scholar (UofT)} \hfill Sep 2024
+\begin{itemize}[leftmargin=0.2in]
+    \item Recognized for outstanding academic performance in embedded systems and computer engineering courses.
+\end{itemize}
+
+\end{document}
