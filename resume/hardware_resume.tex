@@ -1,0 +1,179 @@
+\documentclass[letterpaper,10pt]{article}
+\usepackage{geometry}
+\geometry{margin=0.7in}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage[normalem]{ulem}
+\pagenumbering{gobble}
+
+\setlength{\parskip}{0.5pt}
+\setlist{nosep}  
+\usepackage[compact]{titlesec}
+\usepackage{setspace}
+\setstretch{1.0}
+
+\begin{document}
+
+%------------------------------------------
+% HEADER
+%------------------------------------------
+\begin{center}
+    \huge \textbf{Yongkang Cheng}\\
+    \vspace{0.2cm}
+    \small
+    \href{https://chengyongkang.me/}{\uline{chengyongkang.me}} \,\textbar{}\,
+    437-663-2855 \,\textbar{}\,
+    \href{https://www.github.com/Ken-2511/}{\uline{github.com/Ken-2511}} \,\textbar{}\,
+    \href{mailto:iwmain@outlook.com}{\uline{iwmain@outlook.com}} \,\textbar{}\,
+    \href{https://www.linkedin.com/in/chengyongkang/}{\uline{linkedin.com/in/chengyongkang}}
+\end{center}
+
+\vskip -2ex
+\noindent\rule{\linewidth}{2pt}
+
+%------------------------------------------
+% EDUCATION
+%------------------------------------------
+\section*{\textbf{EDUCATION}}
+\textbf{University of Toronto (St. George Campus), Toronto, ON} \hfill Sep 2023 - May 2028 (expected)\\
+Bachelor of Applied Science in Computer Engineering + PEY Co-op (cGPA: 3.87/4.0) \\
+Relevant Courses: Digital Logic Design, Circuit Analysis, Signal Processing, Computer Architecture
+
+\noindent\rule{\linewidth}{1pt}
+
+%------------------------------------------
+% TECHNICAL SKILLS
+%------------------------------------------
+\section*{\textbf{TECHNICAL SKILLS}}
+\begin{itemize}[leftmargin=0.2in]
+    \item \textbf{Hardware Design:} Verilog, VHDL, SystemVerilog, Digital Circuit Design, ASIC Design Flow
+    \item \textbf{EDA Tools:} Quartus, ModelSim, LTSpice, HFSS, Cadence, Synopsys (familiar)
+    \item \textbf{FPGA \& Processors:} Intel DE1-SoC, Nios-V, Altera/Intel FPGAs, ARM Cortex
+    \item \textbf{Programming:} C/C++, Python, Assembly (RISC-V), MATLAB/Simulink
+    \item \textbf{Hardware Tools:} Oscilloscope, Logic Analyzer, PCB Design, RF Testing Equipment
+\end{itemize}
+
+\noindent\rule{\linewidth}{1pt}
+
+%------------------------------------------
+% EXPERIENCE
+%------------------------------------------
+\section*{\textbf{EXPERIENCE}}
+
+\noindent\href{https://github.com/Ken-2511/ppm-psk-visualize}
+{\uline{\textbf{Research Assistant, Ultra-Wideband Receiver Design (University of Toronto)}}} \hfill Jun 2025 - Jul 2025\\
+\textit{Research Intern, X-Lab, University of Toronto} \hfill \textit{Toronto, ON}
+\begin{itemize}[leftmargin=0.2in]
+    \item Verified hybrid PPM+PSK TX chip pre tape-out; built Python/Simulink pipelines for 2ns symbol sync and carrier recovery under discontinuous 4GHz.
+	\item Built pulse-position detection and K-means cluster calibration to mitigate cross-modulation 100ps timing shifts.
+    \item Developed comprehensive verification testbenches and signal integrity analysis for high-speed digital communications.
+    \item Presented at Undergraduate Engineering Research Day with an interactive hybrid-modulation demo site.
+\end{itemize}
+
+\vspace{0.2cm}
+\noindent\textbf{Research Assistant, Wireless Power Transfer Coil Design (University of Toronto)} \hfill Jul 2025 - Aug 2025\\
+\textit{Research Intern, X-Lab, University of Toronto} \hfill \textit{Toronto, ON}
+\begin{itemize}[leftmargin=0.2in]
+    \item Designed 13.56MHz WPT coils for a BCI implant (3mm×8mm RX, \textasciitilde20mm link).
+    \item Ran HFSS sweeps (turns, trace size, TX diameter) to quantify impacts on coupling ($k$) and quality factor ($Q$).
+    \item Produced PCB layouts with tuning plan; distilled design rules and prepared prototypes for validation.
+    \item Performed electromagnetic field simulations and impedance matching optimization for maximum power transfer efficiency.
+\end{itemize}
+
+\noindent\rule{\linewidth}{1pt}
+
+%------------------------------------------
+% PROJECTS
+%------------------------------------------
+\section*{\textbf{PROJECTS}}
+
+\noindent\href{https://github.com/alexzjm/ece243-sound-synthesizer}{\uline{
+\textbf{FPGA Polyphonic Synthesizer (DE1‑SoC)}}} \hfill Mar 2025
+\begin{itemize}[leftmargin=0.2in]
+    \item Implemented a 20‑voice digital synthesizer in C for a Nios‑V soft‑core, streaming \textbf{8 kHz Q15 audio} through the on‑chip Audio FIFO.  
+    \item Replaced all floating‑point math with \textbf{32‑bit phase accumulators} and fixed‑point kernels for sine, square, triangle, and sawtooth waves, enabling real‑time mixing and envelope processing.  
+    \item Designed an \textbf{ADSR envelope engine} driven by slide‑switch "knobs" and pushbuttons; state changes are visualized on a double‑buffered 320 × 240 VGA UI.  
+    \item Integrated PS/2 keyboard interrupts for sub‑µs latency note‑on/off events; on‑screen piano keys light up in sync with hardware playback.  
+    \item Built modular drawing primitives (Bresenham, bitmap blits) to render live waveforms and icons; architecture supports future effects or MIDI input with minimal refactor.  
+\end{itemize}
+
+\vspace{0.2cm}
+\noindent\href{https://github.com/Ken-2511/ECE241-Project}{\uline{
+\textbf{Verilog Pac-Man Game (University of Toronto)}}} \hfill Nov 2024
+\begin{itemize}[leftmargin=0.2in]
+    \item Created a Pac-Man-style FPGA game using Verilog supporting PS/2 keyboard input and VGA output.
+    \item Implemented complex finite state machines for game logic, sprite rendering, and collision detection.
+    \item Debugged signal synchronization issues and state-machine logic, boosting overall stability and playability.
+    \item Designed custom VGA controller with pixel-perfect timing and double-buffering for smooth animation.
+    \item Automated image conversion using Python + OpenCV for seamless integration of game graphics.
+\end{itemize}
+
+\vspace{0.2cm}
+\noindent\href{https://github.com/Ken-2511/Photogate}{\uline{
+\textbf{Photogate Speed Measurement System}}} \hfill High School Project
+\begin{itemize}[leftmargin=0.2in]
+    \item Designed and built 10 laser-based speed measurement units with 7-segment displays for high school physics education.
+    \item Achieved sub-150us measurement precision using Arduino microcontrollers and custom PCB design.
+    \item Developed custom infrared communication protocol supporting 32-byte data transmission for wireless control.
+    \item Implemented precise timing circuits with crystal oscillators and interrupt-driven measurement algorithms.
+    \item Integrated 3D printed components and aluminum framework for durable classroom-ready construction.
+\end{itemize}
+
+\vspace{0.2cm}
+\noindent\textbf{Digital Signal Processing on FPGA} \hfill Academic Project
+\begin{itemize}[leftmargin=0.2in]
+    \item Implemented real-time FIR and IIR filters in Verilog for audio signal processing applications.
+    \item Designed pipelined multiplier architectures to achieve high-throughput signal processing at 100MHz+.
+    \item Developed comprehensive testbenches with automated verification using SystemVerilog assertions.
+    \item Optimized resource utilization achieving 85\% LUT efficiency while meeting timing constraints.
+\end{itemize}
+
+\vspace{0.2cm}
+\noindent\textbf{RF Circuit Analysis and Design} \hfill Academic Project
+\begin{itemize}[leftmargin=0.2in]
+    \item Designed and simulated low-noise amplifiers and voltage-controlled oscillators using LTSpice.
+    \item Performed S-parameter analysis and stability analysis for multi-stage amplifier designs.
+    \item Implemented impedance matching networks for maximum power transfer in RF applications.
+    \item Conducted Monte Carlo analysis for process variation tolerance and yield optimization.
+\end{itemize}
+
+\vspace{0.2cm}
+\noindent\href{https://github.com/XiuShw/Wrong-Tree}{\uline{
+\textbf{Core AI Developer, Wrong-Tree Unity Game}}} \hfill Dec 2024 - Jan 2025
+\begin{itemize}[leftmargin=0.2in]
+    \item Designed 9-state finite state machine (Idle, Wander, Share, Steal, Flee) for intelligent NPC behaviors in Unity.
+    \item Implemented AI decision-making algorithms with proximity detection and dynamic reputation scoring.
+    \item Created multi-NPC interaction framework supporting simultaneous share/steal operations with visual feedback animations.
+    \item Built modular utility systems including random walk algorithms and distance-based targeting for scalable codebase.
+\end{itemize}
+
+\vspace{0.2cm}
+\noindent\textbf{City Mapify – Interactive City Mapping Application (University of Toronto)} \hfill Jan 2025 - Apr 2025
+\begin{itemize}[leftmargin=0.2in]
+    \item Developed a high-performance mapping engine in C++ to process OpenStreetMap data and render city maps.
+    \item Designed efficient spatial data structures (\textbf{quadtrees}) for dynamic querying and smooth zoom-based rendering.
+    \item Implemented advanced pathfinding algorithms (\textbf{Dijkstra, A*}) for route planning and optimization.
+    \item Enhanced performance with multithreading (OpenMP) for parallel processing of large datasets.
+\end{itemize}
+
+\noindent\rule{\linewidth}{1pt}
+
+%------------------------------------------
+% AWARDS & ACCOMPLISHMENTS
+%------------------------------------------
+\section*{\textbf{AWARDS \& ACCOMPLISHMENTS}}
+
+\noindent\textbf{University of Toronto Excellence Award (UTEA)} \hfill Apr 2025
+\begin{itemize}[leftmargin=0.2in]
+    \item Awarded UTEA for top academic performance and research potential.
+    \item Completed a 14-week full-time research project with faculty supervision.
+    \item Received \$7,500 scholarship for research excellence and inclusion.
+\end{itemize}
+
+\vspace{0.2cm}
+\noindent\textbf{ECE Awards \& Dean's List Scholar (UofT)} \hfill Sep 2024
+\begin{itemize}[leftmargin=0.2in]
+    \item Recognized for outstanding academic performance in Electrical and Computer Engineering.
+\end{itemize}
+
+\end{document}
