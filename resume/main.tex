@@ -1,18 +1,15 @@
 \documentclass[letterpaper,10pt]{article}
 \usepackage{geometry}
-\geometry{margin=1in}
+\geometry{margin=0.65in}
 \usepackage{enumitem}
 \usepackage{hyperref}
-\usepackage[normalem]{ulem} % 避免 ulem 修改默认的 LaTeX 行为
-% \usepackage{helvet}
-% \renewcommand{\familydefault}{\sfdefault}
-\pagenumbering{gobble} % 取消页码
-
-\geometry{margin=0.7in}
+\usepackage[normalem]{ulem}
+\pagenumbering{gobble}
 
 \setlength{\parskip}{0.5pt}
-\setlist{nosep}  
+\setlist{nosep,leftmargin=0.18in}
 \usepackage[compact]{titlesec}
+\titlespacing*{\section}{0pt}{4pt}{2pt}
 \usepackage{setspace}
 \setstretch{1.0}
 
@@ -22,18 +19,16 @@
 % HEADER
 %------------------------------------------
 \begin{center}
-    \huge \textbf{Yongkang Cheng}\\
-    \vspace{0.2cm}
-    \footnotesize
-    \href{https://chengyongkang.me/}{\uline{chengyongkang.me}} \,\textbar{}\,
-    437-663-2855 \,\textbar{}\,
-    \href{https://www.github.com/Ken-2511/}{\uline{github.com/Ken-2511}} \,\textbar{}\,
-    \href{mailto:iwmain@outlook.com}{\uline{iwmain@outlook.com}} \,\textbar{}\,
-    \href{https://www.linkedin.com/in/chengyongkang/}{\uline{linkedin.com/in/chengyongkang}}
+    {\huge \textbf{Yongkang Cheng}}\\[2pt]
+    {\footnotesize
+    \href{https://chengyongkang.me/}{\uline{chengyongkang.me}} \;\textbar\; 
+    437-663-2855 \;\textbar\; 
+    \href{https://www.github.com/Ken-2511/}{\uline{github.com/Ken-2511}} \;\textbar\; 
+    \href{mailto:iwmain@outlook.com}{\uline{iwmain@outlook.com}} \;\textbar\; 
+    \href{https://www.linkedin.com/in/chengyongkang/}{\uline{linkedin.com/in/chengyongkang}}}
 \end{center}
-
-\vskip -2ex
-\noindent\rule{\linewidth}{2pt}
+\vskip -1.5ex
+\noindent\rule{\linewidth}{1.6pt}
 
 %------------------------------------------
 % EDUCATION
@@ -65,7 +60,7 @@ Relevant Courses: Applied Fundamentals of Deep Learning, Software Design and Com
 \section*{\textbf{EXPERIENCE}}
 
 \noindent\href{https://github.com/Ken-2511/ppm-psk-visualize}
-{\uline{\textbf{Research Assistant, Ultra-Wideband Receiver Design}}} \hfill Jun 2025 - Jul 2025\\
+{\uline{\textbf{Research Assistant, Ultra-Wideband Receiver Design}}} \hfill May 2025 - Jul 2025\\
 \textit{Research Intern, X-Lab, University of Toronto} \hfill \textit{Toronto, ON}
 \begin{itemize}[leftmargin=0.2in]
     \item Verified hybrid PPM+PSK TX chip pre tape-out; built Python/Simulink pipelines for 2ns symbol sync and carrier recovery under discontinuous 4GHz.
@@ -77,7 +72,7 @@ Relevant Courses: Applied Fundamentals of Deep Learning, Software Design and Com
 \noindent\textbf{Research Assistant, Wireless Power Transfer Coil Design} \hfill Jul 2025 - Aug 2025\\
 \textit{Research Intern, X-Lab, University of Toronto} \hfill \textit{Toronto, ON}
 \begin{itemize}[leftmargin=0.2in]
-    \item Designed 13.56MHz WPT coils for a BCI implant (3mm×8mm RX, \textasciitilde20mm link).
+    \item Designed 13.56MHz WPT coils for a BCI implant (3mm×8mm RX, 20mm link).
     \item Ran HFSS sweeps (turns, trace size, TX diameter) to quantify impacts on coupling ($k$) and quality factor ($Q$).
     \item Produced PCB layouts with tuning plan; distilled design rules and prepared prototypes for validation.
 \end{itemize}
@@ -101,7 +96,8 @@ Relevant Courses: Applied Fundamentals of Deep Learning, Software Design and Com
 \section*{\textbf{PROJECTS}}
 
 \noindent\href{https://github.com/Ken-2511/HandwritingRecognition}{\uline{
-\textbf{Project Lead, Handwritten Text Recognition (University of Toronto)}}} \hfill Jun 2024 - Aug 2024
+\textbf{Project Lead, Handwritten Text Recognition}}} \hfill Jun 2024 - Aug 2024\\
+\textit{Course Project, University of Toronto}
 \begin{itemize}[leftmargin=0.2in]
     \item Led a remote team to develop a PyTorch-based CRNN model for handwritten text recognition.
     \item Achieved 87\% word-level and 95\% character-level accuracy on the test set with 10,000+ samples.
@@ -110,7 +106,7 @@ Relevant Courses: Applied Fundamentals of Deep Learning, Software Design and Com
 
 \vspace{0.3cm}
 \noindent\href{https://github.com/XiuShw/Wrong-Tree}{\uline{
-\textbf{Core AI Developer, Wrong-Tree Unity Game}}} \hfill Dec 2024 - Jan 2025
+\textbf{Core AI Developer, Wrong-Tree Unity Game}}} \hfill May 2025
 \begin{itemize}[leftmargin=0.2in]
     \item Designed 9-state finite state machine (Idle, Wander, Share, Steal, Flee) for intelligent NPC behaviors in Unity.
     \item Implemented AI decision-making algorithms with proximity detection and dynamic reputation scoring for realistic social interactions.
@@ -120,10 +116,10 @@ Relevant Courses: Applied Fundamentals of Deep Learning, Software Design and Com
 
 \vspace{0.3cm}
 \noindent\href{https://github.com/Ken-2511/wellness-room-expansion}{\uline{
-\textbf{Project Manager, Wellness Room Expansion (University of Toronto)}}} \hfill Jan 2024 -- Apr 2024
+\textbf{Project Manager, Wellness Room Expansion}}} \hfill Jan 2024 - Apr 2024\\
+\textit{Course Project, University of Toronto}
 \begin{itemize}[leftmargin=0.2in]
     \item Led a cross-functional team of 6 students to redesign and prototype a wellness room, endorsed by the client.
-    % @ChatGPT: if needed, replace Microsoft Project with Gantt Chart
     \item Streamlined task management using Microsoft Project, tracking over 100+ tasks to completion on schedule.
     \item Incorporating client feedback, generated 100+ initial ideas and finalized 3 proposed designs.
     \item Designed and visualized proposals using Rhino and Blender 3D models, reducing client feedback iterations and improving decision-making efficiency.
@@ -132,9 +128,10 @@ Relevant Courses: Applied Fundamentals of Deep Learning, Software Design and Com
 
 \vspace{0.3cm}
 \noindent\href{https://github.com/Ken-2511/utek_disaster_communication_system}{\uline{
-\textbf{UTEK Wildfire Disaster Communication System}}} \hfill Jan 2025
+\textbf{Wildfire Disaster Communication System}}} \hfill Jan 2025\\
+\textit{Backend Developer, University of Toronto Engineering Competition (UTEK)}
 \begin{itemize}[leftmargin=0.2in]
-    \item \textbf{Top 8 Finalist} in University of Toronto Engineering Competition (UTEK) among all competing teams.
+    \item \textbf{Top 8 Finalist} in University of Toronto Engineering Competition among all competing teams.
     \item Built real-time communication platform with Python, Streamlit, and Flask for wildfire emergency response coordination.
     \item Implemented interactive map interface using Folium for visualizing fire incidents and location-based alerts.
     \item Developed bidirectional communication system between residents and rescue teams with photo upload capabilities.
@@ -143,20 +140,9 @@ Relevant Courses: Applied Fundamentals of Deep Learning, Software Design and Com
 \end{itemize}
 
 \vspace{0.3cm}
-\noindent\href{https://github.com/Ken-2511/walrus_test}{\uline{
-\textbf{Fourier Epicycle Drawing Visualization System}}} \hfill May 2025
-\begin{itemize}[leftmargin=0.2in]
-    \item Built an interactive Python/Pygame app to draw strokes and visualize their Fourier decomposition as animated epicycles in just 3 hours using the MCP (Model Context Protocol) technique.
-    \item Implemented stroke preprocessing (merging, equidistant resampling) for accurate analysis.
-    \item Animated rotating circles (epicycles) to demonstrate Fourier series reconstruction of closed curves.
-    \item Developed modular utilities for stroke processing, Fourier transform, and Matplotlib-based plots.
-    \item Designed extensible architecture for saving/loading, real-time adjustment, and multi-color support.
-    \item Produced educational outputs and visualizations for teaching and presentations.
-\end{itemize}
-
-\vspace{0.3cm}
 \noindent\href{https://github.com/alexzjm/ece243-sound-synthesizer}{\uline{
-\textbf{FPGA Polyphonic Synthesizer (DE1‑SoC)}}} \hfill Mar 2025
+\textbf{FPGA Polyphonic Synthesizer (DE1‑SoC)}}} \hfill Mar 2025\\
+\textit{Course Project, University of Toronto}
 \begin{itemize}[leftmargin=0.2in]
     \item Implemented a 20‑voice digital synthesizer in C for a Nios‑V soft‑core, streaming \textbf{8 kHz Q15 audio} through the on‑chip Audio FIFO.  
     \item Replaced all floating‑point math with \textbf{32‑bit phase accumulators} and fixed‑point kernels for sine, square, triangle, and sawtooth waves, enabling real‑time mixing and envelope processing.  
@@ -167,7 +153,8 @@ Relevant Courses: Applied Fundamentals of Deep Learning, Software Design and Com
 
 
 \vspace{0.3cm}
-\noindent\textbf{City Mapify – Interactive City Mapping Application (University of Toronto)} \hfill Jan 2025 - Apr 2025
+\noindent\textbf{City Mapify – Interactive City Mapping Application (University of Toronto)} \hfill Jan 2025 - Apr 2025\\
+\textit{Course Project, University of Toronto}
 \begin{itemize}[leftmargin=0.2in]
     \item Developed a high-performance mapping engine in C++ to process OpenStreetMap data and render city maps.
     \item Designed efficient spatial data structures (\textbf{quadtrees}) for dynamic querying and smooth zoom-based rendering.
@@ -179,7 +166,8 @@ Relevant Courses: Applied Fundamentals of Deep Learning, Software Design and Com
 
 \vspace{0.3cm}
 \noindent\href{https://github.com/Ken-2511/Diary-with-ChatGPT-Comment}{\uline{
-\textbf{Diary with AI Feedback}}} \hfill Sep 2023 -- On Going
+\textbf{Diary with AI Feedback}}} \hfill Sep 2023 -- On Going\\
+\textit{Personal Project, React.js, FastAPI, OpenAI API}
 \begin{itemize}[leftmargin=0.2in]
     \item Designed and implemented a journaling program integrated with OpenAI’s GPT API, generating insightful feedback and suggestions for over 750 diary entries.
     \item Developed a diary sorting algorithm to retrieve contextually similar past entries by vector search, enhancing user experience and maintaining API costs below 0.2\$ per call.
@@ -189,7 +177,8 @@ Relevant Courses: Applied Fundamentals of Deep Learning, Software Design and Com
 
 \vspace{0.3cm}
 \noindent\href{https://github.com/Ken-2511/ECE241-Project}{\uline{
-\textbf{Verilog Pac-Man Game (University of Toronto)}}} \hfill Nov 2024
+\textbf{Verilog Pac-Man Game (DE1-SoC)}}} \hfill Nov 2024\\
+\textit{Course Project, University of Toronto}
 \begin{itemize}[leftmargin=0.2in]
     \item Created a Pac-Man-style FPGA game using Verilog supporting PS/2 keyboard input and VGA output.
     \item Debugged signal synchronization issues and state-machine logic, boosting overall stability and playability.
@@ -199,18 +188,18 @@ Relevant Courses: Applied Fundamentals of Deep Learning, Software Design and Com
 
 \vspace{0.3cm}
 \noindent\href{https://github.com/Ken-2511/WillPower}{\uline{
-\textbf{WillPower \textbar{} Time Management \& Monitoring}}} \hfill Jan 2025 - Present
+\textbf{WillPower \textbar{} Time Management \& Monitoring}}} \hfill Jan 2025 - Present\\
+\textit{Personal Project, Raspberry Pi, FastAPI, Azure Face API}
 \begin{itemize}[leftmargin=0.2in]
     \item Built a modular system with Raspberry Pi capturing images and sending them to a Windows host for local storage and analysis.
     \item Deployed Nginx, FastAPI, and libcurl for data transfer, facilitating real-time user monitoring and minimal downtime.
-    % @ChatGPT: for the bullet point below you can change the technologies used to match the job you are applying for.
     \item Currently exploring Azure Face APIs and transfer learning for user-behavior analysis on a dataset of over 180,000 images.
 \end{itemize}
 
 \vspace{0.3cm}
 \noindent\href{https://chengyongkang.me/chat}{\uline{
-\textbf{Self-Clone Chatbot with Diary Database}}} \hfill Oct 2024 - Present
-% @ChatGPT: for this project, if the job doesn't have so much related technical skills, you can remove this project.
+\textbf{Self-Clone Chatbot with Diary Database}}} \hfill Oct 2024 - Present\\
+\textit{Personal Project, React.js, FastAPI, OpenAI API}
 \begin{itemize}[leftmargin=0.2in]
     \item Built a self-hosted AI-powered chatbot that replicates personal interaction styles, deployed using React.js, FastAPI, and Nginx on a Raspberry Pi.
     \item Integrated OpenAI API and a NoSQL database for real-time Q\&A functionality with personal diary data.
@@ -219,7 +208,8 @@ Relevant Courses: Applied Fundamentals of Deep Learning, Software Design and Com
 
 \vspace{0.3cm}
 \noindent\href{https://github.com/Ken-2511/Photogate}{\uline{
-\textbf{Photogate Speed Measurement System}}} \hfill High School Project
+\textbf{Photogate Speed Measurement System}}} \hfill July 2023 - Aug 2023\\
+\textit{Personal Project, Arduino, Python, Tkinter}
 \begin{itemize}[leftmargin=0.2in]
     \item Designed and built 10 laser-based speed measurement units with 7-segment displays for high school physics education.
     \item Achieved sub-150us measurement precision using Arduino microcontrollers and custom PCB design.
@@ -230,7 +220,8 @@ Relevant Courses: Applied Fundamentals of Deep Learning, Software Design and Com
 
 \vspace{0.3cm}
 \noindent\href{https://github.com/Ken-2511/AcornCarwler}{\uline{
-\textbf{Acorn Course Timetable Monitor Crawler}}} \hfill Personal Project
+\textbf{Acorn Course Timetable Monitor Crawler}}} \hfill Aug 2025\\
+\textit{Personal Project, Python, BeautifulSoup, SQLite}
 \begin{itemize}[leftmargin=0.2in]
     \item Built automated Python web crawler to monitor University of Toronto's Acorn course timetable system for real-time changes.
     \item Implemented intelligent change detection algorithms with robust error handling and automatic recovery mechanisms.
@@ -247,21 +238,14 @@ Relevant Courses: Applied Fundamentals of Deep Learning, Software Design and Com
 
 \noindent\textbf{University of Toronto Excellence Award (UTEA)} \hfill Apr 2025
 \begin{itemize}[leftmargin=0.2in]
-    \item Awarded UTEA for top academic performance and research potential.
+    \item \$7,500 scholarship for 6 students among 2nd to 4th ECE for research potential.
     \item Completed a 14-week full-time research project with faculty supervision.
-    \item Received \$7,500 scholarship for research excellence and inclusion.
 \end{itemize}
 
 \vspace{0.3cm}
 \noindent\textbf{ECE Awards \& Dean's List Scholar (UofT)} \hfill Sep 2024
 \begin{itemize}[leftmargin=0.2in]
-    \item Recognized for outstanding academic performance.
+    \item Awarded for top academic standing (average \textgreater 80\%) for 4 consecutive semesters.
 \end{itemize}
-
-% \vspace{0.3cm}
-% \noindent\textbf{American Computer Science League (ACSL) - Bronze Prize} \hfill Jan 2021
-% \begin{itemize}[leftmargin=0.2in]
-%     \item Placed in top 10\% overall, with top-20\% scores in the 4th round, after 60 hours of training.
-% \end{itemize}
 
 \end{document}
