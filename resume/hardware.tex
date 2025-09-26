@@ -1,0 +1,120 @@
+\documentclass[letterpaper,10pt]{article}
+\usepackage{geometry}
+\geometry{margin=0.65in}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[normalem]{ulem}
+\pagenumbering{gobble}
+
+\setlength{\parskip}{0.5pt}
+\setlist{nosep,leftmargin=0.18in}
+\usepackage[compact]{titlesec}
+\titlespacing*{\section}{0pt}{4pt}{2pt}
+\usepackage{setspace}
+\setstretch{1.0}
+
+\begin{document}
+
+%------------------------------------------
+% HEADER
+%------------------------------------------
+\begin{center}
+    {\huge \textbf{Yongkang Cheng}}\\[2pt]
+    \vskip 1ex
+    {\small
+    \href{https://chengyongkang.me/}{\uline{chengyongkang.me}} \;\textbar\; 
+    437-663-2855 \;\textbar\;
+    \href{https://www.github.com/Ken-2511/}{\uline{github.com/Ken-2511}} \;\textbar\; 
+    \href{mailto:iwmain@outlook.com}{\uline{iwmain@outlook.com}} \;\textbar\; 
+    \href{https://www.linkedin.com/in/chengyongkang/}{\uline{linkedin.com/in/chengyongkang}}}
+\end{center}
+\vskip -1.7ex
+\noindent\rule{\linewidth}{1.6pt}
+
+%------------------------------------------
+% EDUCATION
+%------------------------------------------
+\section*{\textbf{EDUCATION}}
+\textbf{University of Toronto (St. George), Toronto, ON} \hfill Sep 2023 -- May 2028 (expected)\\
+BASc in Computer Engineering + PEY Co-op, cGPA: 3.87/4.0 (88.6\%)\\
+Relevant Coursework: Digital Electronics (in progress), Digital Systems, Computer Organization
+
+\noindent\rule{\linewidth}{1pt}
+
+%------------------------------------------
+% TECHNICAL SKILLS
+%------------------------------------------
+\section*{\textbf{TECHNICAL SKILLS}}
+\begin{itemize}[leftmargin=0.2in]
+    \item \textbf{Programming:} Python, C/C++, Verilog, Assembly (RISC-V), MATLAB/Simulink
+    \item \textbf{EDA Tools:} Quartus, ModelSim, LTSpice, Ansys HFSS, Altium Designer, SUE, MAX
+    \item \textbf{Hardware Tools:} PCB Design, Oscilloscope, Soldering, 3D Printing, Vector Network Analyzer
+    \item \textbf{3D Modeling:} Rhinoceros, Blender, 3Ds Max
+\end{itemize}
+
+\noindent\rule{\linewidth}{1pt}
+
+%------------------------------------------
+% EXPERIENCE
+%------------------------------------------
+\section*{\textbf{EXPERIENCE}}
+
+\noindent\textbf{Research Assistant, Wireless Power Transfer Coil Design} \hfill Jul 2025 - Aug 2025\\
+\textit{Research Intern, X-Lab, University of Toronto} \hfill \textit{Toronto, ON}
+\begin{itemize}[leftmargin=0.2in]
+    \item Designed a resonant 13.56 MHz wireless power transfer coil pair enabling reliable power delivery to a brain-computer interface implant across a 20 mm separation.
+    \item Ran HFSS sweeps (turns, trace width, TX diameter) to optimize coupling ($k > 0.01$) and quality factor ($Q > 28$).
+    \item Performed electromagnetic field simulations and resonant frequency tuning to improve link efficiency under load.
+    \item Designed PCB layouts incorporating capacitive tuning networks; fabricated and tested 3 TX and 11 RX prototype boards to validate coupling efficiency.
+\end{itemize}
+
+\vspace{0.2cm}
+\noindent
+\textbf{Research Assistant, Ultra-Wideband Receiver Design} \hfill May 2025 - Jul 2025\\
+\textit{Research Intern, X-Lab, University of Toronto} \hfill \textit{Toronto, ON}
+\begin{itemize}[leftmargin=0.2in]
+    \item Verified a hybrid 2-PPM + 8-PSK TX chip pre-tapeout; built Python/Simulink pipelines for 2 ns symbol sync and carrier recovery under discontinuous 4 GHz.
+	\item Built pulse-position detection and K-means timing/phase calibration for constellation stabilization and PPM demodulation.
+    \item Achieved zero-BER demodulation across 2,500 symbols under $\geq 13\,\mathrm{dB}$ SNR (AWGN) and $\pi/16$ phase jitter.
+    \item Presented at Undergraduate Engineering Research Day with a \href{https://docs.google.com/presentation/d/1h4lmc_HQLzNvtGE4oE1jedOlNVZjL3iztEyGKnC-ico/edit?usp=sharing}{\uline{poster}} and an interactive demo \href{https://github.com/Ken-2511/ppm-psk-visualize}{\uline{site}}.
+\end{itemize}
+
+\noindent\rule{\linewidth}{1pt}
+
+%------------------------------------------
+% PROJECTS
+%------------------------------------------
+\section*{\textbf{PROJECTS}}
+
+\noindent\href{https://github.com/alexzjm/ece243-sound-synthesizer}{\uline{
+\textbf{FPGA Polyphonic Synthesizer}}} \hfill Mar 2025
+\begin{itemize}[leftmargin=0.2in]
+    \item Built (with one collaborator) a 20‑voice synthesizer in C on a Nios‑V (RISC‑V) soft‑core on DE1-SoC; streamed 8 kHz Q15 audio via on‑chip Audio FIFO.
+    \item Replaced floats with 32‑bit phase accumulators and fixed‑point DSP; realized real‑time mixing and ADSR envelope.
+    \item Implemented PS/2 interrupt‑driven input with a double‑buffered 320×240 VGA UI.
+\end{itemize}
+
+\vspace{0.2cm}
+\noindent\href{https://github.com/Ken-2511/ECE241-Project}{\uline{
+\textbf{Verilog Pac-Man Game}}} \hfill Nov 2024
+\begin{itemize}[leftmargin=0.2in]
+    \item Built (with one collaborator) an FPGA Pac‑Man in Verilog with PS/2 input and VGA output on DE1-SoC.
+    \item Implemented hierarchical FSM game logic (movement, ghost AI, collision detection) and a custom VGA controller with cycle‑accurate 320×240 scan timing.
+    \item Resolved signal synchronization and state logic issues using ModelSim; automated asset conversion via OpenCV.
+\end{itemize}
+
+\noindent\rule{\linewidth}{1pt}
+
+%------------------------------------------
+% AWARDS & ACCOMPLISHMENTS
+%------------------------------------------
+\section*{\textbf{AWARDS}}
+
+\begin{itemize}[leftmargin=0.2in]
+	\item \textbf{University of Toronto Excellence Award (UTEA)} \hfill Apr 2025\\
+    \$7,500 scholarship for 6 students among 2nd to 4th ECE for research potential.
+	\item \textbf{ECE Awards} \hfill Sep 2024\\
+	Awarded to top 30 students in the first-year ECE program out of 300+ students.
+\end{itemize}
+
+\end{document}
