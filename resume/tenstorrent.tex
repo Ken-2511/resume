@@ -1,0 +1,118 @@
+\documentclass[letterpaper,10pt]{article}
+\usepackage{geometry}
+\geometry{margin=0.65in}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[normalem]{ulem}
+\pagenumbering{gobble}
+\setlength{\parskip}{0.5pt}
+\setlist{nosep,leftmargin=0.18in}
+\usepackage[compact]{titlesec}
+\titlespacing*{\section}{0pt}{4pt}{2pt}
+\usepackage{setspace}
+\setstretch{1.0}
+
+% ================= DOCUMENT =================
+\begin{document}
+\begin{center}
+    {\huge \textbf{Yongkang Cheng}}\\[2pt]
+    {\footnotesize
+    \href{https://chengyongkang.me/}{\uline{chengyongkang.me}} \;|\; 
+    Toronto, ON (On-site) \;|\;
+    437-663-2855 \;|\; 
+    \href{mailto:iwmain@outlook.com}{\uline{iwmain@outlook.com}} \;|\; 
+    \href{https://github.com/Ken-2511}{\uline{github.com/Ken-2511}} \;|\; 
+    \href{https://www.linkedin.com/in/chengyongkang/}{\uline{linkedin.com/in/chengyongkang}}}
+\end{center}
+\vskip -1.4ex
+\noindent\rule{\linewidth}{1.6pt}
+
+% ================= PROFILE =================
+\section*{\textbf{PROFILE}}
+Early-stage Computer Engineering student (cGPA 3.87/4.0) with hands-on RTL, FPGA, fixed-point DSP, PCB and HFSS EM simulation experience. Built RISC-V soft-core based audio system, Verilog game logic with hierarchical FSMs, and verified hybrid UWB receiver algorithms (synchronization, timing recovery). Passionate about computer architecture, hardware/software co-design, and scaling ML workloads on custom hardware. Actively expanding into structured verification (self-checking testbenches, coverage) and architectural modeling.
+
+\noindent\rule{\linewidth}{1pt}
+
+% ================= EDUCATION =================
+\section*{\textbf{EDUCATION}}
+\textbf{University of Toronto}, Toronto, ON \hfill Sep 2023 -- May 2028 (expected)\\
+BASc Computer Engineering + PEY Co-op (cGPA: 3.87/4.0)\\
+Relevant: Digital Systems, Computer Organization, Digital Electronics (in progress), Signals \\[-2pt]
+\noindent\rule{\linewidth}{1pt}
+
+% ================= CORE SKILLS =================
+\section*{\textbf{CORE SKILLS}}
+\begin{itemize}[leftmargin=0.2in]
+    \item \textbf{RTL / Architecture:} Verilog (FSMs, VGA timing, fixed-point datapaths), basic pipelining concepts, resource/timing trade-offs
+    \item \textbf{Programming:} C/C++ (algorithms, pathfinding, performance), Python (signal processing, tooling), RISC-V Assembly
+    \item \textbf{Verification \& Tools:} ModelSim (simulation/debug), Quartus (synthesis, pin constraints), HFSS (EM sweeps), Python test harnesses
+    \item \textbf{Embedded / Systems:} Nios-V soft-core integration, interrupt-driven I/O (PS/2), low-latency VGA + audio pipelines
+    \item \textbf{Other:} PCB design (2-layer impedance-aware WPT boards), fixed-point DSP, K-means calibration, basic clustering \& ML awareness
+\end{itemize}
+\noindent\rule{\linewidth}{1pt}
+
+% ================= EXPERIENCE =================
+\section*{\textbf{EXPERIENCE}}
+\textbf{Research Assistant, Ultra-Wideband Receiver Design} (UWB RX / Sync / Calibration) \hfill May 2025 -- Jul 2025\\
+\textit{X-Lab, University of Toronto, Toronto, ON}
+\begin{itemize}[leftmargin=0.2in]
+    \item Prototyped pre-tapeout algorithmic verification of hybrid 2-PPM + 8-PSK TX path; built Python/Simulink pipeline for 2 ns symbol sync under discontinuous 4 GHz carrier windows.
+    \item Implemented pulse-position detection + K-means timing/phase clustering reducing residual timing skew to <100 ps and stabilizing constellation.
+    \item Achieved zero-BER over 2.5k symbol test vectors at $\geq$13 dB SNR (AWGN) and $\pi/16$ phase jitter; produced self-checking evaluation scripts.
+    \item Drafted extension plan to migrate algorithmic checks into modular SystemVerilog/UVM-style environments (learning in progress).
+\end{itemize}
+
+\vspace{0.15cm}
+\textbf{Research Assistant, Wireless Power Transfer Coil Design} (EM / PCB) \hfill Jul 2025 -- Aug 2025\\
+\textit{X-Lab, University of Toronto}
+\begin{itemize}[leftmargin=0.2in]
+    \item Designed resonant 13.56 MHz WPT link for BCI implant across 20 mm; optimized coupling ($k > 0.01$) and $Q > 28$ via HFSS parametric sweeps (turn count, trace width, TX diameter).
+    \item Produced 3 TX + 11 RX prototype PCBs with matched capacitive tuning network; validated coupling efficiency vs simulation.
+    \item Authored reproducible sweep scripts + tabulated geometry vs $k, Q$ enabling rapid design iteration.
+\end{itemize}
+
+\noindent\rule{\linewidth}{1pt}
+
+% ================= SELECTED PROJECTS =================
+\section*{\textbf{SELECTED PROJECTS}}
+\textbf{FPGA Polyphonic Synthesizer (RISC-V Soft-Core)} \hfill Mar 2025\\
+\begin{itemize}[leftmargin=0.2in]
+    \item Implemented 20-voice audio engine in C on Nios-V (RISC-V) soft-core; streamed 8 kHz Q15 samples through on-chip FIFO with deterministic latency.
+    \item Replaced floating point with 32-bit phase accumulators + fixed-point DSP kernels (sine/triangle/saw) sustaining real-time mix without underruns.
+    \item Built interrupt-driven PS/2 input + double-buffered 320x240 VGA UI; modular draw primitives (Bresenham, bitmap blits) for low-cycle rendering.
+    \item Outlined prospective RTL offload (envelope \& oscillator units) for resource/timing comparison.
+\end{itemize}
+
+\textbf{Verilog Pac-Man (Cycle-Accurate VGA + FSM)} \hfill Nov 2024\\
+\begin{itemize}[leftmargin=0.2in]
+    \item Authored hierarchical FSM architecture (movement arbitration, ghost AI, collision) in Verilog; achieved stable 60 FPS VGA at 320x240 timing.
+    \item Created custom VGA controller (pixel clock, scan counters) and synchronized multi-domain inputs (PS/2) via debouncing + edge detection.
+    \item Leveraged ModelSim wave inspection + self-checking stimulus to resolve metastability and timing glitches early.
+\end{itemize}
+
+\textbf{City Mapify Routing Engine (C++ Performance)} \hfill Jan 2025 -- Apr 2025\\
+\begin{itemize}[leftmargin=0.2in]
+    \item Engineered spatial data structures (quadtrees) + multi-algorithm pathfinding (Dijkstra, A*, simulated annealing, ant colony) for large map datasets.
+    \item Performed profiling + micro-optimizations (cache-friendly adjacency, reduced heap ops) to cut median route compute latency (est. >30\% vs baseline).
+    \item Experience transferable to architectural modeling \& performance exploration of memory / interconnect behavior.
+\end{itemize}
+
+\noindent\rule{\linewidth}{1pt}
+
+% ================= AWARDS =================
+\section*{\textbf{AWARDS}}
+\begin{itemize}[leftmargin=0.2in]
+    \item University of Toronto Excellence Award (Research Scholarship, $\$7,500$) \hfill Apr 2025
+    \item ECE Awards (Top ~10\%) \hfill Sep 2024
+\end{itemize}
+
+% ================= ADDITIONAL =================
+\noindent\rule{\linewidth}{1pt}
+\section*{\textbf{ADDITIONAL}}
+\begin{itemize}[leftmargin=0.2in]
+    \item \textbf{Interests:} RISC-V microarchitecture, RTL verification (UVM basics), ML workload characterization, fixed-point DSP, low-power links.
+    \item \textbf{Learning Roadmap:} SystemVerilog interfaces + assertions, UVM agents/sequencers, simple out-of-order core modeling (TL-Verilog / PyRTL), FPGA-based performance counters.
+    \item \textbf{Selected Repos:} Synthesizer, Verilog Pac-Man, UWB visualizer (see GitHub).
+\end{itemize}
+
+\end{document}
