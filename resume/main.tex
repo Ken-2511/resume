@@ -63,18 +63,20 @@ Relevant Courses: Applied Fundamentals of Deep Learning, Software Design and Com
 {\uline{\textbf{Research Assistant, Ultra-Wideband Receiver Design}}} \hfill May 2025 - Jul 2025\\
 \textit{Research Intern, X-Lab, University of Toronto} \hfill \textit{Toronto, ON}
 \begin{itemize}[leftmargin=0.2in]
-    \item Verified hybrid PPM+PSK TX chip pre tape-out; built Python/Simulink pipelines for 2ns symbol sync and carrier recovery under discontinuous 4GHz.
-	\item Built pulse-position detection and K-means cluster calibration to mitigate cross-modulation 100ps timing shifts.
-    \item Presented at Undergraduate Engineering Research Day with an interactive hybrid-modulation demo site.
+    \item Verified a hybrid 2-PPM + 8-PSK TX chip pre-tapeout; built Python/Simulink pipelines for 2 ns symbol sync and carrier recovery under discontinuous 4 GHz.
+    \item Built pulse-position detection and K-means timing/phase calibration for constellation stabilization and PPM demodulation.
+    \item Achieved zero-BER demodulation across 2,500 symbols under $\geq 13\,\mathrm{dB}$ SNR (AWGN) and $\pi/16$ phase jitter.
+    \item Presented at Undergraduate Engineering Research Day with a \href{https://docs.google.com/presentation/d/1h4lmc_HQLzNvtGE4oE1jedOlNVZjL3iztEyGKnC-ico/edit?usp=sharing}{\uline{poster}} and an interactive demo \href{https://github.com/Ken-2511/ppm-psk-visualize}{\uline{site}}.
 \end{itemize}
 
 \vspace{0.3cm}
 \noindent\textbf{Research Assistant, Wireless Power Transfer Coil Design} \hfill Jul 2025 - Aug 2025\\
 \textit{Research Intern, X-Lab, University of Toronto} \hfill \textit{Toronto, ON}
 \begin{itemize}[leftmargin=0.2in]
-    \item Designed 13.56MHz WPT coils for a BCI implant (3mm×8mm RX, 20mm link).
-    \item Ran HFSS sweeps (turns, trace size, TX diameter) to quantify impacts on coupling ($k$) and quality factor ($Q$).
-    \item Produced PCB layouts with tuning plan; distilled design rules and prepared prototypes for validation.
+    \item Designed a resonant 13.56 MHz wireless power transfer coil pair enabling reliable power delivery to a brain-computer interface implant across a 20 mm separation.
+    \item Ran HFSS sweeps (turns, trace width, TX diameter) to optimize coupling ($k > 0.01$) and quality factor ($Q > 28$).
+    \item Performed electromagnetic field simulations and resonant frequency tuning to improve link efficiency under load.
+    \item Designed PCB layouts incorporating capacitive tuning networks; fabricated and tested 3 TX and 11 RX prototype boards to validate coupling efficiency.
 \end{itemize}
 
 
@@ -156,11 +158,8 @@ Relevant Courses: Applied Fundamentals of Deep Learning, Software Design and Com
 \noindent\textbf{City Mapify – Interactive City Mapping Application (University of Toronto)} \hfill Jan 2025 - Apr 2025\\
 \textit{Course Project, University of Toronto}
 \begin{itemize}[leftmargin=0.2in]
-    \item Developed a high-performance mapping engine in C++ to process OpenStreetMap data and render city maps.
-    \item Designed efficient spatial data structures (\textbf{quadtrees}) for dynamic querying and smooth zoom-based rendering.
-    \item Implemented advanced pathfinding algorithms (\textbf{Dijkstra, A*, Simulated Annealing, Ant Colony Optimization}) for route planning and delivery optimization.
-    \item Integrated real-time features like day/night mode, weather data, and AI-powered route descriptions.
-    \item Enhanced performance with multithreading (OpenMP) and RESTful API integration (libcurl).
+    \item Built a C++ mapping engine parsing \textbf{2GB} OpenStreetMap data with QuadTree indexing at 60 FPS.
+    \item Implemented A*/Dijkstra pathfinding and delivery optimization (Simulated Annealing, ACO) for \textbf{250+} packages.
 \end{itemize}
 
 
