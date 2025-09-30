@@ -1,0 +1,121 @@
+\documentclass[letterpaper,10pt]{article}
+\usepackage{geometry}
+\geometry{margin=0.65in}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[normalem]{ulem}
+\pagenumbering{gobble}
+
+\setlength{\parskip}{0.5pt}
+\setlist{nosep,leftmargin=0.18in}
+\usepackage[compact]{titlesec}
+\titlespacing*{\section}{0pt}{4pt}{2pt}
+\usepackage{setspace}
+\setstretch{1.0}
+
+\begin{document}
+
+%------------------------------------------
+% HEADER
+%------------------------------------------
+\begin{center}
+    {\huge \textbf{Yongkang Cheng}}\\[2pt]
+    \vskip 1ex
+    {\small
+    \href{https://chengyongkang.me/}{\uline{chengyongkang.me}} \;\textbar\; 
+    437-663-2855 \;\textbar\;
+    \href{https://www.github.com/Ken-2511/}{\uline{github.com/Ken-2511}} \;\textbar\; 
+    \href{mailto:iwmain@outlook.com}{\uline{iwmain@outlook.com}} \;\textbar\; 
+    \href{https://www.linkedin.com/in/chengyongkang/}{\uline{linkedin.com/in/chengyongkang}}}
+\end{center}
+\vskip -1.7ex
+\noindent\rule{\linewidth}{1.6pt}
+
+%------------------------------------------
+% EDUCATION
+%------------------------------------------
+\section*{\textbf{EDUCATION}}
+\textbf{University of Toronto}, Toronto, ON \hfill Sep 2023 -- May 2028 (expected)\\
+BASc Computer Engineering + PEY Co-op, cGPA: 3.87/4.0 (88.6\%)\\
+Relevant: Digital Systems, Computer Organization, (In progress) Digital Electronics, Operating Systems
+
+\noindent\rule{\linewidth}{1pt}
+
+%------------------------------------------
+% TECHNICAL SKILLS
+%------------------------------------------
+
+\section*{\textbf{TECHNICAL SKILLS}}
+\begin{itemize}[leftmargin=0.2in]
+    \item \textbf{Programming:} C/C++, Python, Verilog, Assembly (RISC-V), MATLAB/Simulink, JavaScript, Java
+    \item \textbf{Systems:} Operating Systems, Multithreading, Memory Management, Synchronization, Drivers (FPGA/Embedded)
+    \item \textbf{EDA Tools:} Quartus, Vivado, ModelSim, LTSpice, Ansys HFSS, Altium Designer, Rhinoceros, Blender, 3Ds Max
+    \item \textbf{Tools \& Libraries:} I2C, SPI, OpenCV, PyTorch, Pandas, FastAPI, Nginx, Git, Linux
+    \item \textbf{Hardware:} Raspberry Pi (5, zero, pico), STM32, Soldering, 3D Printing, Oscilloscope, Logic Analyzer, Multimeter
+\end{itemize}
+
+\noindent\rule{\linewidth}{1pt}
+
+%------------------------------------------
+% EXPERIENCE
+%------------------------------------------
+\section*{\textbf{EXPERIENCE}}
+\noindent
+\textbf{Research Assistant, Ultra-Wideband Receiver Design} \hfill May 2025 - Jul 2025\\
+\textit{Research Intern, X-Lab, University of Toronto} \hfill \textit{Toronto, ON}
+\begin{itemize}[leftmargin=0.2in]
+    \item Collaborated in a 2-person team, verified a hybrid 2-PPM + 8-PSK TX chip pre-tapeout; built Python/Simulink pipelines for 2 ns symbol sync and carrier recovery under discontinuous 4 GHz.
+	\item Built pulse-position detection and K-means phase calibration for constellation stabilization and PPM demodulation.
+    \item Achieved error-free demodulation across 2,500 symbols under $\geq 13\,\mathrm{dB}$ SNR (AWGN) and $\pi/16$ phase jitter.
+    \item Automated simulation/test flows with Python scripts for waveform analysis and regression testing.
+    \item Presented at Undergraduate Engineering Research Day with a \href{https://docs.google.com/presentation/d/1h4lmc_HQLzNvtGE4oE1jedOlNVZjL3iztEyGKnC-ico/edit?usp=sharing}{\uline{poster}} and an interactive demo \href{https://github.com/Ken-2511/ppm-psk-visualize}{\uline{site}}.
+\end{itemize}
+
+\noindent\rule{\linewidth}{1pt}
+
+%------------------------------------------
+% PROJECTS
+%------------------------------------------
+\section*{\textbf{PROJECTS}}
+\noindent\href{https://github.com/alexzjm/ece243-sound-synthesizer}{\uline{
+    \textbf{FPGA Polyphonic Synthesizer (DE1-SoC, RISC-V)}}} \hfill Mar 2025
+\begin{itemize}[leftmargin=0.2in]
+  \item Developed a 20-voice soft-core audio engine (C on Nios-V) streaming 8 kHz Q15 samples via audio FIFO; optimized kernels by replacing floating-point with fixed-point arithmetic.  
+  \item Designed and integrated interrupt service routines for PS/2 input and a double-buffered 320×240 VGA display pipeline, ensuring synchronized graphics rendering with deterministic latency.
+  \item Built modular graphics primitives and interface APIs to enable scalable user interaction under real-time performance constraints.
+\end{itemize}
+
+\noindent\noindent\href{https://github.com/Ken-2511/ECE241-Project}{\uline{
+    \textbf{Verilog Pac-Man (Custom VGA Controller)}}} \hfill Nov 2024
+\begin{itemize}[leftmargin=0.2in]
+  \item Implemented low-level VGA timing and synchronization logic, similar to display controller driver design.
+  \item Synchronized pixel timing with PS/2 input; scripted ModelSim stimuli to resolve metastability and timing issues.
+\end{itemize}
+
+\noindent\noindent\href{https://github.com/Ken-2511/WillPower}{\uline{
+    \textbf{WillPower (Distributed Embedded Monitoring)}}} \hfill Jan 2025 -- Feb 2025
+\begin{itemize}[leftmargin=0.2in]
+  \item Built Raspberry Pi capture node → FastAPI/Nginx pipeline (libcurl + structured endpoints) for continuous image telemetry.
+  \item Added resiliency (retries, time-stamped storage) and modular hooks for on-device filtering / future inference.
+\end{itemize}
+
+\noindent\textbf{City Mapify (C++ Performance Engine)} \hfill Jan 2025 -- Apr 2025
+\begin{itemize}[leftmargin=0.2in]
+  \item Implemented QuadTree spatial index and pathfinding (Dijkstra/A*/metaheuristics) with cache-friendly adjacency layout enabling fast rendering (60 FPS) on 2GB map data.
+  \item Designed modular pathfinding kernel (templated weight + heuristic policy) allowing rapid addition of new optimization heuristics.
+\end{itemize}
+
+\noindent\rule{\linewidth}{1pt}
+
+%------------------------------------------
+% AWARDS
+%------------------------------------------
+\section*{\textbf{AWARDS}}
+\begin{itemize}[leftmargin=0.2in]
+	\item \textbf{University of Toronto Excellence Award (UTEA)} \hfill Apr 2025\\
+    \$7,500 scholarship for 6 students among 2nd to 4th ECE for research potential.
+	\item \textbf{ECE Awards} \hfill Sep 2024\\
+	Awarded to top 30 students in the first-year ECE program out of 300+ students.
+\end{itemize}
+
+\end{document}
