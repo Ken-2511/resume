@@ -85,20 +85,16 @@ Relevant: Digital Systems, Computer Organization, (In progress) Digital Electron
   \item Built modular graphics primitives and interface APIs to enable scalable user interaction under real-time performance constraints.
 \end{itemize}
 
-\noindent\noindent\href{https://github.com/Ken-2511/ECE241-Project}{\uline{
-    \textbf{Verilog Pac-Man (Custom VGA Controller)}}} \hfill Nov 2024
+\vspace{0.3em}
+\noindent\href{https://github.com/Ken-2511/ECE241-Project}{\uline{
+\textbf{Verilog Pac-Man Game (DE1-SoC)}}} \hfill Nov 2024
 \begin{itemize}[leftmargin=0.2in]
-  \item Implemented low-level VGA timing and synchronization logic, similar to display controller driver design.
-  \item Synchronized pixel timing with PS/2 input; scripted ModelSim stimuli to resolve metastability and timing issues.
+    \item Created a Pac-Man-style FPGA game using Verilog on DE1-SoC supporting PS/2 keyboard input and VGA output.
+    \item Debugged signal sync and FSM logic issues using ModelSim, automated the debug process with customized testbenches and .do files, ensured smooth and bug-free gameplay.
+    \item Prototyped the game using Pygame for agile development, automated image conversion using Python + OpenCV.
 \end{itemize}
 
-\noindent\noindent\href{https://github.com/Ken-2511/WillPower}{\uline{
-    \textbf{WillPower (Distributed Embedded Monitoring)}}} \hfill Jan 2025 -- Feb 2025
-\begin{itemize}[leftmargin=0.2in]
-  \item Built Raspberry Pi capture node → FastAPI/Nginx pipeline (libcurl + structured endpoints) for continuous image telemetry.
-  \item Added resiliency (retries, time-stamped storage) and modular hooks for on-device filtering / future inference.
-\end{itemize}
-
+\vspace{0.3em}
 \noindent\textbf{City Mapify (C++ Performance Engine)} \hfill Jan 2025 -- Apr 2025
 \begin{itemize}[leftmargin=0.2in]
   \item Implemented QuadTree spatial index and pathfinding (Dijkstra/A*/metaheuristics) with cache-friendly adjacency layout enabling fast rendering (60 FPS) on 2GB map data.
