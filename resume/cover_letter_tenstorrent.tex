@@ -1,0 +1,60 @@
+\documentclass[letterpaper,10pt]{article}
+\usepackage{geometry}
+\geometry{margin=0.65in}
+\usepackage[hidelinks]{hyperref}
+\usepackage[normalem]{ulem}
+\pagenumbering{gobble}
+\setlength{\parskip}{6pt}
+
+\begin{document}
+
+%------------------------------------------
+% HEADER
+%------------------------------------------
+\begin{center}
+    {\huge \textbf{Yongkang Cheng}}\\[2pt]
+    {\small
+    \href{https://chengyongkang.me/}{\uline{chengyongkang.me}} \;\textbar\; 
+    437-663-2855 \;\textbar\; 
+    \href{mailto:iwmain@outlook.com}{\uline{iwmain@outlook.com}} \;\textbar\; 
+    \href{https://www.github.com/Ken-2511/}{\uline{github.com/Ken-2511}} \;\textbar\; 
+    \href{https://www.linkedin.com/in/chengyongkang/}{\uline{linkedin.com/in/chengyongkang}}}
+\end{center}
+
+\vspace{0.5em}
+September 30, 2025\\
+Hiring Manager\\
+Tenstorrent\\
+Toronto, ON\\
+
+\vspace{0.8em}
+\textbf{Re: Low-Level Software Intern}
+
+\vspace{0.6em}
+Dear Hiring Manager,
+
+I am excited to apply for the Low-Level Software Intern role at Tenstorrent. As a BASc Computer Engineering student at the University of Toronto focused on systems, performance, and close-to-metal development, I am drawn to Tenstorrent’s vision of unifying hardware and software to power next-generation AI. I am ready to contribute onsite in Toronto, working with engineers who push kernel-level performance and ML workloads.
+
+I build where timing, determinism, and memory behavior matter. In an FPGA Polyphonic Synthesizer project, I implemented a 20-voice soft-core audio engine in C on a RISC-V-based Nios-V, replacing floating-point with fixed-point kernels for waveform generation and envelopes, wiring PS/2 ISR input with a double-buffered 320×240 VGA pipeline. The result was glitch-free, low-latency playback with predictable compute budgets per frame—work that reinforced disciplined inner-loop design and cache-aware data layouts. In a Verilog Pac-Man project, I created ModelSim testbenches and debug flows for synchronization and FSM issues, improving stability while keeping interfaces simple and testable.
+
+I also enjoy profiling and optimization in C++. In the City Mapify engine, I rendered 2 GB OpenStreetMap data at 60 FPS by designing a QuadTree spatial index and refactoring graph adjacency for locality. I split the pathfinding kernel into policy templates (weights/heuristics) to enable fast experimentation and maintained a clean boundary between visualization and compute. This taught me to treat performance as a first-class API: measure, isolate hot paths, and restructure data for access patterns, not just algorithmic elegance.
+
+Working close to silicon has trained my attention to detail. As a Research Assistant on an Ultra-Wideband pre-tapeout effort, I built Python/Simulink pipelines for symbol sync and carrier recovery under discontinuous 4 GHz clocks, stabilized constellations with timing/phase calibration, and verified error-free demodulation across 2,500 symbols at $\geq 13\,\mathrm{dB}$ SNR and $\pi/16$ phase jitter. The work blended signal processing rigor with production-style automation—skills I am ready to apply to kernels and libraries that power Tenstorrent’s AI chips.
+
+Beyond what is in my embedded resume, several projects from my main resume show I learn fast and ship:
+\begin{itemize}
+    \item \textbf{Handwritten Text Recognition:} Led a PyTorch CRNN effort with strong word/character accuracy, giving me intuition for how low-level kernels surface at the framework level.
+    \item \textbf{Diary with AI Feedback:} Optimized end-to-end data and request pipelines, reducing average load time from 10 s to 0.5 s through measurement-driven iteration.
+    \item \textbf{Photogate Speed Measurement:} Built laser-based timing with sub-150 $\mu$s precision on microcontrollers, reinforcing comfort with interrupts, timers, and debouncing.
+    \item \textbf{WillPower:} Deployed a Raspberry Pi–based data path with Nginx, FastAPI, and libcurl, strengthening my systems wiring and reliability instincts.
+\end{itemize}
+
+I am comfortable diving into unfamiliar codebases, instrumenting and profiling to find bottlenecks, and collaborating to get real workloads running. I bring strong C/C++, RISC-V familiarity, a bias for fixed-point and vectorizable kernels when appropriate, and a disciplined approach to debugging. Most of all, I learn extremely fast and enjoy turning performance mysteries into clear, testable hypotheses.
+
+Thank you for your time and consideration. I would welcome the chance to discuss how I can contribute to Tenstorrent’s low-level software stack and help accelerate real ML workloads on your hardware.
+
+Sincerely,\\[1.0em]
+Yongkang Cheng
+
+\end{document}
+
