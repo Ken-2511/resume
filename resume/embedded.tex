@@ -42,33 +42,25 @@ Relevant: Digital Systems, Computer Organization, (In progress) Digital Electron
 \noindent\rule{\linewidth}{1pt}
 
 %------------------------------------------
-% TECHNICAL SKILLS
-%------------------------------------------
-
-\section*{\textbf{TECHNICAL SKILLS}}
-\begin{itemize}[leftmargin=0.2in]
-    \item \textbf{Programming:} C/C++, Python, Verilog, Assembly (RISC-V), MATLAB/Simulink, JavaScript, Java
-    \item \textbf{Systems:} Operating Systems, Multithreading, Memory Management, Synchronization, Drivers (FPGA/Embedded)
-    \item \textbf{EDA Tools:} Quartus, Vivado, ModelSim, LTSpice, Ansys HFSS, Altium Designer, Rhinoceros, Blender, 3Ds Max
-    \item \textbf{Tools \& Libraries:} I2C, SPI, OpenCV, PyTorch, Pandas, FastAPI, Nginx, Git, Linux
-    \item \textbf{Hardware:} Raspberry Pi (5, zero, pico), STM32, Soldering, 3D Printing, Oscilloscope, Logic Analyzer, Multimeter
-\end{itemize}
-
-\noindent\rule{\linewidth}{1pt}
-
-%------------------------------------------
 % EXPERIENCE
 %------------------------------------------
-\section*{\textbf{EXPERIENCE}}
-\noindent
-\textbf{Research Assistant, Ultra-Wideband Receiver Design} \hfill May 2025 - Jul 2025\\
+\section*{\textbf{EXPERIENCES}}
+
+\noindent\textbf{Research Assistant, Spiking Neural Network FPGA Deployment} \hfill Sep 2025 - Present\\
 \textit{Research Intern, X-Lab, University of Toronto} \hfill \textit{Toronto, ON}
 \begin{itemize}[leftmargin=0.2in]
-    \item Collaborated in a 2-person team, verified a hybrid 2-PPM + 8-PSK TX chip pre-tapeout; built Python/Simulink pipelines for 2 ns symbol sync and carrier recovery under discontinuous 4 GHz.
+	\item Took over Verilog implementation of an SNN from a teammate; verified modules with ModelSim testbenches.
+	\item Prototyping FPGA deployment flow with Vivado, validated initial design on Nexys board, preparing SNN integration.
+\end{itemize}
+
+\vspace{0.3em}
+\noindent\textbf{Research Assistant, Ultra-Wideband Receiver Design} \hfill May 2025 - Jul 2025\\
+\textit{Research Intern, X-Lab, University of Toronto} \hfill \textit{Toronto, ON}
+\begin{itemize}[leftmargin=0.2in]
+    \item Collaborated in a 2-person team, verified a hybrid 4-PPM + 8-PSK TX chip pre-tapeout; built Python/Simulink pipelines for 2 ns symbol sync and carrier recovery under discontinuous 4.6 GHz.
 	\item Built pulse-position detection and K-means phase calibration for constellation stabilization and PPM demodulation.
-    \item Achieved error-free demodulation across 2,500 symbols under $\geq 13\,\mathrm{dB}$ SNR (AWGN) and $\pi/16$ phase jitter.
-    \item Automated simulation/test flows with Python scripts for waveform analysis and regression testing.
-    \item Presented at Undergraduate Engineering Research Day with a \href{https://docs.google.com/presentation/d/1h4lmc_HQLzNvtGE4oE1jedOlNVZjL3iztEyGKnC-ico/edit?usp=sharing}{\uline{poster}} and an interactive demo \href{https://github.com/Ken-2511/ppm-psk-visualize}{\uline{site}}.
+    \item Achieved error-free demodulation across 2,500 symbols under $\geq 16\,\mathrm{dB}$ SNR (AWGN) and $\pi/16$ phase jitter.
+    \item Presented at Undergraduate Engineering Research Day with a \href{https://docs.google.com/presentation/d/1h4lmc_HQLzNvtGE4oE1jedOlNVZjL3iztEyGKnC-ico/edit?usp=sharing}{\uline{poster}} and an interactive \href{https://github.com/Ken-2511/ppm-psk-visualize}{\uline{demo}}, engaged 50+ attendees.
 \end{itemize}
 
 \noindent\rule{\linewidth}{1pt}
@@ -78,11 +70,11 @@ Relevant: Digital Systems, Computer Organization, (In progress) Digital Electron
 %------------------------------------------
 \section*{\textbf{PROJECTS}}
 \noindent\href{https://github.com/alexzjm/ece243-sound-synthesizer}{\uline{
-    \textbf{FPGA Polyphonic Synthesizer (DE1-SoC, RISC-V)}}} \hfill Mar 2025
+    \textbf{FPGA Polyphonic Synthesizer}}} \hfill Mar 2025
 \begin{itemize}[leftmargin=0.2in]
-  \item Developed a 20-voice soft-core audio engine (C on Nios-V) streaming 8 kHz Q15 samples via audio FIFO; optimized kernels by replacing floating-point with fixed-point arithmetic.  
+  \item Developed a 20-voice soft-core audio engine (C on Nios-V) streaming 8 kHz Q15 samples via audio FIFO; optimized kernels by replacing floating-point with fixed-point arithmetic.
   \item Designed and integrated interrupt service routines for PS/2 input and a double-buffered 320×240 VGA display pipeline, ensuring synchronized graphics rendering with deterministic latency.
-  \item Built modular graphics primitives and interface APIs to enable scalable user interaction under real-time performance constraints.
+  \item Developed simple graphics primitives and interrupt-driven APIs for responsive, low-latency user interaction.
 \end{itemize}
 
 \vspace{0.3em}
@@ -97,8 +89,23 @@ Relevant: Digital Systems, Computer Organization, (In progress) Digital Electron
 \vspace{0.3em}
 \noindent\textbf{City Mapify (C++ Performance Engine)} \hfill Jan 2025 -- Apr 2025
 \begin{itemize}[leftmargin=0.2in]
-  \item Implemented QuadTree spatial index and pathfinding (Dijkstra/A*/metaheuristics) with cache-friendly adjacency layout enabling fast rendering (60 FPS) on 2GB map data.
-  \item Designed modular pathfinding kernel (templated weight + heuristic policy) allowing rapid addition of new optimization heuristics.
+  \item Implemented QuadTree spatial index and pathfinding (Dijkstra/A*/metaheuristics) with cache-friendly adjacency layout enabling 60 FPS rendering on 2GB map data.
+  \item Designed modular pathfinding kernel with templated weight/heuristic for fast extensibility.
+\end{itemize}
+
+\noindent\rule{\linewidth}{1pt}
+
+%------------------------------------------
+% TECHNICAL SKILLS
+%------------------------------------------
+
+\section*{\textbf{SKILLS}}
+\begin{itemize}[leftmargin=0.2in]
+    \item \textbf{Programming:} C/C++, Python, Verilog, Assembly (RISC-V), MATLAB/Simulink, JavaScript, Java
+    \item \textbf{Systems:} Linux system programming, multithreading, process control, memory management, device drivers
+    \item \textbf{EDA Tools:} Quartus, Vivado, ModelSim, LTSpice, Ansys HFSS, Altium Designer, Rhinoceros, Blender, 3Ds Max
+    \item \textbf{Tools \& Libraries:} I2C, SPI, OpenCV, PyTorch, Pandas, FastAPI, Nginx, Git, Linux
+    \item \textbf{Hardware:} Raspberry Pi (5, zero, pico), STM32, Soldering, 3D Printing, Oscilloscope, Logic Analyzer, Multimeter
 \end{itemize}
 
 \noindent\rule{\linewidth}{1pt}

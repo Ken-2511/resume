@@ -37,7 +37,7 @@
 \section*{\textbf{EDUCATION}}
 \textbf{University of Toronto (St. George), Toronto, ON} \hfill Sep 2023 -- May 2028 (expected)\\
 BASc in Computer Engineering + PEY Co-op, cGPA: 3.87/4.0 (88.6\%)\\
-Relevant Coursework: Digital Electronics (in progress), Operating Systems (in progress), Digital Systems, Computer Organization
+Relevant Courses: Digital Electronics (in progress), Operating Systems (in progress), Algorithms and Data Structures(in progress), Digital Systems (Verilog), Computer Organization (Assembly), Software Design and Communication (C++)
 
 \noindent\rule{\linewidth}{1pt}
 
@@ -61,8 +61,9 @@ Relevant Coursework: Digital Electronics (in progress), Operating Systems (in pr
 \textit{Research Intern, X-Lab, University of Toronto} \hfill \textit{Toronto, ON}
 \begin{itemize}[leftmargin=0.2in]
     \item Verified a hybrid 2-PPM + 8-PSK TX chip pre-tapeout; built Python/Simulink pipelines for 2 ns symbol sync and carrier recovery under discontinuous 4 GHz.
-	\item Built pulse-position detection and K-means phase calibration for constellation stabilization and PPM demodulation.
-    \item Achieved zero-BER demodulation across 2,500 symbols under $\geq 13\,\mathrm{dB}$ SNR (AWGN) and $\pi/16$ phase jitter.
+	\item Built pulse-position detection and K-means phase calibration for PPM demodulation and constellation adjustment.
+    \item Achieved error-free demodulation across 2,500 symbols under $\geq 13\,\mathrm{dB}$ SNR (AWGN) and $\pi/16$ phase jitter.
+    \item Automated simulation/test flows with Python scripts for waveform analysis and regression testing.
     \item Presented at Undergraduate Engineering Research Day with a \href{https://docs.google.com/presentation/d/1h4lmc_HQLzNvtGE4oE1jedOlNVZjL3iztEyGKnC-ico/edit?usp=sharing}{\uline{poster}} and an interactive demo \href{https://github.com/Ken-2511/ppm-psk-visualize}{\uline{site}}.
 \end{itemize}
 
@@ -76,10 +77,12 @@ Relevant Coursework: Digital Electronics (in progress), Operating Systems (in pr
 \noindent\href{https://github.com/alexzjm/ece243-sound-synthesizer}{\uline{
 \textbf{FPGA Polyphonic Synthesizer}}} \hfill Mar 2025
 \begin{itemize}[leftmargin=0.2in]
-	\item Implemented a 20‑voice polyphonic synthesizer in C (with one collaborator) running on a Nios‑V RISC‑V soft‑core on the DE1‑SoC; streamed 8 kHz Q15 audio via the on‑chip audio FIFO.
-    \item Implemented PS/2 interrupt‑driven input with a double‑buffered 320×240 VGA UI.
-    \item Replaced floats with 32‑bit phase accumulators and fixed‑point DSP; realized real‑time mixing and ADSR envelope.
+  \item Built a 20-voice polyphonic synthesizer in C on a Nios-V RISC-V soft-core, streaming 8 kHz audio via on-chip FIFO.
+  \item Used Q15 fixed-point arithmetic, LUTs, and shift-based division to replace floating-point, enabling real-time DSP mixing and ADSR envelopes.
+  \item Implemented interrupt-driven PS/2 keyboard input with a double-buffered 320×240 VGA interface.
+  \item Developed simple graphics primitives and interrupt-driven APIs for responsive, low-latency user interaction.
 \end{itemize}
+
 
 \vspace{0.2cm}
 \noindent\href{https://github.com/Ken-2511/ECE241-Project}{\uline{
