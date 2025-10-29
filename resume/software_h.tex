@@ -36,7 +36,7 @@
 \section*{\textbf{EDUCATION}}
 \textbf{University of Toronto (St. George), Toronto, ON} \hfill Sep 2023 -- May 2028 (expected)\\
 BASc in Computer Engineering + PEY Co-op (cGPA: 3.87/4.0, Score: 88.6/100) \\
-Relevant: Applied Deep Learning Fundamentals, Software Design \& Communication
+Relevant Courses: Applied Deep Learning Fundamentals (PyTorch), Software Design \& Communication (C++), Computer Architecture, Operating Systems (ongoing), Algorithms \& Data Structures (ongoing)
 
 \noindent\rule{\linewidth}{1pt}
 
@@ -45,19 +45,11 @@ Relevant: Applied Deep Learning Fundamentals, Software Design \& Communication
 %------------------------------------------
 \section*{\textbf{EXPERIENCES}}
 
-\noindent\textbf{Research Assistant, Spiking Neural Network FPGA Deployment} \hfill Sep 2025 - Present\\
+\noindent\textbf{Research Assistant, Spiking Neural Network Edge Device Deployment} \hfill Sep 2025 - Present\\
 \textit{Research Intern, X-Lab, University of Toronto} \hfill \textit{Toronto, ON}
 \begin{itemize}[leftmargin=0.2in]
 	\item Took over Verilog implementation of an SNN from a teammate; verified modules with ModelSim testbenches.
-	\item Prototyping FPGA deployment flow with Vivado, validated initial design on Nexys board, preparing SNN integration.
-\end{itemize}
-
-\vspace{0.2em}
-\noindent\href{https://volun-track.web.app}{\uline{\textbf{Frontend Manager, Voluntrack.org}}} \hfill May 2024 -- Present\\
-\textit{Volunteer, Non-profit \textbar{} React, Firebase} \hfill \textit{Toronto, ON}
-\begin{itemize}
-    \item Led a 4-person team to redesign the React frontend; improved task completion and engagement by 20\%.
-    \item Built fuzzy search and filtering over Firebase data; streamlined workflows and simplified onboarding.
+	\item Quantized the CNN layers to 8-bit using TorchAO, working on post-training quantization on SNN layers, accelerating mixed-precision inference using HaiLo-8 on Raspberry Pi for real-time low-power inference with small precision drop.
 \end{itemize}
 
 \vspace{0.2em}
@@ -66,7 +58,6 @@ Relevant: Applied Deep Learning Fundamentals, Software Design \& Communication
 \textit{Research Intern, X-Lab, University of Toronto} \hfill \textit{Toronto, ON}
 \begin{itemize}[leftmargin=0.2in]
     \item Collaborated in a 2-person team, verified a hybrid 4-PPM + 8-PSK TX chip pre-tapeout; built Python/Simulink pipelines for 2 ns symbol sync and carrier recovery under discontinuous 4.6 GHz.
-	\item Built pulse-position detection and K-means phase calibration for constellation stabilization and PPM demodulation.
     \item Achieved error-free demodulation across 2,500 symbols under $\geq 16\,\mathrm{dB}$ SNR (AWGN) and $\pi/16$ phase jitter.
     \item Presented at Undergraduate Engineering Research Day with a \href{https://docs.google.com/presentation/d/1h4lmc_HQLzNvtGE4oE1jedOlNVZjL3iztEyGKnC-ico/edit?usp=sharing}{\uline{poster}} and an interactive \href{https://github.com/Ken-2511/ppm-psk-visualize}{\uline{demo}}, engaged 50+ attendees.
 \end{itemize}
@@ -78,25 +69,27 @@ Relevant: Applied Deep Learning Fundamentals, Software Design \& Communication
 %------------------------------------------
 \section*{\textbf{PROJECTS}}
 \noindent\href{https://github.com/Ken-2511/HandwritingRecognition}{\uline{\textbf{Handwritten Text Recognition (CRNN)}}} \hfill Jun 2024 -- Aug 2024\\
-\textit{Course Project \textbar{} PyTorch, Python}
+\textit{Course Project \textbar{} PyTorch, OpenCV, TensorBoard}
 \begin{itemize}
-    \item Trained a CRNN achieving \textbf{87\%} word- and \textbf{95\%} char-level accuracy on \textbf{10k+} samples.
-    \item Implemented connected-component word segmentation; \textbf{1024\,x\,1024} inference in \textbf{\textless 4s} on CPU.
+    \item Led a team of 4 to develop a PyTorch-based CRNN (ResNet-50 + BiLSTM) for handwritten text recognition on a RTX-4090, achieving 87\% word- and 95\% char-level accuracy on 10k+ samples.
+    \item Augmented IAM and CVL dataset with random distortions, and generated synthetic data using EMNIST characters.
+    \item Implemented connected-component word segmentation; 1024\,x\,1024 inference in \textless 4s on CPU.
 \end{itemize}
 
 \vspace{0.2em}
 \noindent\href{https://github.com/Ken-2511/city-mapify}{\uline{\textbf{City Mapify – Interactive Mapping Engine}}} \hfill Jan 2025 -- Apr 2025\\
-\textit{Course Project \textbar{} C++, OpenStreetMap}
+\textit{Course Project \textbar{} C++, OpenStreetMap, GTK}
 \begin{itemize}
-	\item Built C++ mapping engine parsing \textbf{2GB} OpenStreetMap data with QuadTree indexing at 60 FPS.
-	\item Implemented A*/Dijkstra pathfinding and delivery optimization (Simulated Annealing, ACO) for \textbf{250+} packages.
+	\item Built C++ mapping engine parsing 2GB OpenStreetMap data with QuadTree indexing at 60 FPS.
+	\item Implemented A*/Dijkstra pathfinding and delivery optimization (Simulated Annealing, ACO) for 250+ packages.
 \end{itemize}
 
 \vspace{0.2em}
 \noindent\href{https://chengyongkang.me/chat}{\uline{\textbf{Self-Hosted Chatbot with Diary DB}}} \hfill Oct 2024\\
-\textit{Personal Project \textbar{} React, FastAPI, Nginx, NoSQL}
+\textit{Personal Project \textbar{} React, FastAPI, DDNS, Nginx, NoSQL}
 \begin{itemize}
-    \item Deployed full-stack chatbot replicating personal style; TLS, DDNS, and reverse proxy for secure access.
+	\item Designed a journaling software with OpenAI API, generating insightful feedbacks for over 750 diary entries.
+    \item Deployed full-stack chatbot replicating personal style; configured TLS, DDNS, and reverse proxy for secure access.
     \item Integrated OpenAI API and vector search for context-aware Q\&A over personal diaries.
 \end{itemize}
 
@@ -107,9 +100,9 @@ Relevant: Applied Deep Learning Fundamentals, Software Design \& Communication
 %------------------------------------------
 \section*{\textbf{SKILLS}}
 \begin{itemize}
-    \item \textbf{Languages:} Python, C/C++, JavaScript, Node.js, Java, Verilog, Assembly, MATLAB/Simulink
-    \item \textbf{Web/Backend:} FastAPI, Flask, React, REST, Docker, Nginx, SQL/NoSQL
-    \item \textbf{ML/Data:} PyTorch, NumPy, OpenCV, Pandas; basic LangChain
+    \item \textbf{Languages:} Python, C/C++, Node.js, Java, Verilog, Assembly, MATLAB/Simulink
+    \item \textbf{Web/Backend:} React, FastAPI, Flask, Docker, Nginx, SQL/NoSQL
+    \item \textbf{ML/Data:} PyTorch, NumPy, OpenCV, Pandas, LangChain, MCP
     \item \textbf{Tools:} Linux, Git, SSH, Firebase, Raspberry Pi, 3D Printing, STM32, Altium Designer
 \end{itemize}
 
@@ -122,7 +115,7 @@ Relevant: Applied Deep Learning Fundamentals, Software Design \& Communication
 
 \begin{itemize}[leftmargin=0.2in]
 	\item \textbf{University of Toronto Excellence Award (UTEA)} \hfill Apr 2025\\
-    \$7,500 scholarship for 6 students among 2nd to 4th ECE for research potential.
+    \$7,500 scholarship for 6 students among 2nd to 4th ECE for summer research in X-Lab.
 	\item \textbf{ECE Awards} \hfill Sep 2024\\
 	Awarded to top 30 students in the first-year ECE program out of 300+ students.
 \end{itemize}
